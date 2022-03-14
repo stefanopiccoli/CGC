@@ -1,0 +1,74 @@
+%PREAMBOLO
+\documentclass[a4paper, 12pt]{report}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{amsbsy}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{multicol}
+\renewcommand{\footnoterule}{
+  \kern -3pt
+  \hrule width \textwidth height 1pt
+  \kern 2pt
+}%ALLUNGA LINEA PIE DI PAGINA
+\setcounter{tocdepth}{3}%AGGIUNGE SUBSUBSECTION ALL'INDICE
+%INIZIO
+\begin{document}
+\title{
+\textbf{Cloud Green Computing}}
+\author{Stefano Piccoli}
+\date{\today}
+\maketitle
+\tableofcontents
+    \chapter*{Introduzione}
+    \chapter{PaaS (Platform as a Service)}
+      Servizio che fornisce hardware e software per lo sviluppo di applicazioni. L'utente deve fornire solo l'applicazione e i dati
+    \paragraph{Vantaggi}
+    \begin{itemize}
+      \item Facilità di gestione e modifica dell'applicazione
+      \item Facilità nell'adottare nuove tecnologie
+    \end{itemize}
+    \paragraph{Rischi}
+    \begin{itemize}
+      \item Disponibilità del servizio: l'interruzione del servizio da parte del fornitore comporta un immediato disservizio
+      \item Vendor lock-in: difficoltà di cambiare servizio da parte del cliente
+    \end{itemize}
+      \section{Heroku}
+      \paragraph{}\textbf{Heroku} è una piattaforma cloud basata su \textbf{container} con servizi integrati e un potente ecosistema che permette il deployment e running di applicazioni.
+      \subsection{Dynos}
+      \paragraph{}I \textbf{dynos} sono container Linux virtualizzati, Heroku trasforma l'applicazione utente in diversi \textbf{dynos}.
+      \paragraph{Vantaggi}
+      \begin{itemize}
+        \item Scalabilità 
+        \item Evitare di gestire l'infrastruttura
+      \end{itemize}
+      \paragraph{Premium:}
+      \begin{itemize}
+        \item \textbf{Scaling}
+        \item \textbf{Autoscaling}: permette di inserire politiche per quando usare lo scaling
+      \end{itemize}
+      \subsection{Buildtime}
+      \paragraph{}Per sviluppare una applicazione Heroku richiede:
+      \begin{itemize}
+        \item \textbf{Codice sorgente}
+        \item \textbf{Lista di dipendenze}
+        \item \textbf{Procfile}: file di testo che indica quale comando usare per far eseguire l'applicazione
+      \end{itemize}
+      Slug: Un insieme di codice sorgente, dipendenze, supporto per output, etc...
+      Stack: Sistema operativo Ubuntu
+      \subsection{Runtime}
+      Nel \textbf{runtime} si prende lo slug e lo stack e vengono creati i dynos, che rappresentano le istanze utente, il dyno manager fa partire i container con il comando specificato dall'utente.
+      \subsection{Esempio}
+      \begin{enumerate}
+        \item Applicazione riceve richiesta
+      \end{enumerate}
+      %SOTTO GRAFICO
+      \subsection{Add-ons}
+      \paragraph{}Gli \textbf{add-ons} sono funzionalità fornite da Heroku che possono essere aggiunte facilmente all'applicazione.
+    \section{Altri PaaS}
+    \begin{itemize}
+      \item Microsoft Azure
+      \item OpenShift
+    \end{itemize}
+\end{document}

@@ -1,0 +1,18 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}PaaS (Platform as a Service)}{3}{}%
+\contentsline {paragraph}{Vantaggi}{3}{}%
+\contentsline {paragraph}{Rischi}{3}{}%
+\contentsline {section}{\numberline {1.1}Heroku}{3}{}%
+\contentsline {paragraph}{}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Dynos}{3}{}%
+\contentsline {paragraph}{}{3}{}%
+\contentsline {paragraph}{Vantaggi}{3}{}%
+\contentsline {paragraph}{Premium:}{4}{}%
+\contentsline {subsection}{\numberline {1.1.2}Buildtime}{4}{}%
+\contentsline {paragraph}{}{4}{}%
+\contentsline {subsection}{\numberline {1.1.3}Runtime}{4}{}%
+\contentsline {subsection}{\numberline {1.1.4}Esempio}{4}{}%
+\contentsline {subsection}{\numberline {1.1.5}Add-ons}{4}{}%
+\contentsline {paragraph}{}{4}{}%
+\contentsline {section}{\numberline {1.2}Altri PaaS}{4}{}%
