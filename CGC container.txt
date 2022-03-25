@@ -1,0 +1,32 @@
+Containers
+Docker: Azienda che ha realizzato una piattaforma che permette di eseguire una applicazione in ambiente "isolato"
+-permette la portabilità
+-sfruttano una proprità del kernel: possono avere più instanze separate degli spazi utente e queste istanze si chiamano containers.
+-Svantaggio: sono meno isolati delle macchine virtuali, condividono le risorse di sistema
+Docker ha aggiunto
+-Immagini portatili: Risultato di impacchettare applicazione in modo da essere facile da trasportare
+-Intrerfaccia utente semplice
+
+Docker Engine: Permette di creare e mandare in esecuzione container
+Docker Hub: Repository enorme che contiene molte immagini di container
+
+Docker sfrutta la virtualizzazione basata sui container per eseguire in maniera isolata diverse GUEST INSTANCES sullo stesso sistema operativo.
+Portabilità: Il softaware può essere impacchettato in images, file read only che può essere mandato in esecuzione da docker e creato quindi il container
+
+I container sono volatili cioè scompaiono quando viene interrotto il container.
+Docker ha introdotto i volumi che possono essere montati nei container per memorizzare in maniera persistente i dati.
+
+Images: template in sola lettura usati per creare container, registrate in registry (strutturati in repository che contengono insieme di immagini per diverse versioni del sw)
+stratificazione: ogni strato può essere a sua volta una immagine, la piu in basso è chiamata base image
+
+Docker Hub: Registry enorme mantenuto da Docker che permette di esplorare migliaia di immagini
+
+COMANDI:
+PULL tiro unn immagine dal registry alla macchina
+RUN viene creato il container dall immagine
+COMMIT Salvare una nuova immagine
+PUSH Carica immagine nel registry
+BUILD Si crea un dockerfile che permette di creare un'immagine automaticamente
+
+Docker swarm mode permette di eseguire un container su piu docker host e divide gli swarm node in manager e worker.
+Vantaggi: Permette una gestione dichiarativa della nostra applicazione
