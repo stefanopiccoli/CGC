@@ -21,7 +21,98 @@
 \date{\today}
 \maketitle
 \tableofcontents
-    \chapter*{Introduzione}
+    \chapter{IaaS (Infrastructure as a Service)}
+      \section{Virtualizzazione}
+        \paragraph{}La \textbf{virtualizzazione} rende possibile al sistema operativo di un server di eseguire su uno \textbf{strato virtuale} (\textbf{Hypervisor}).\\
+        Questo permette di eseguire molteplici \textbf{macchine virtuali}, ognuna con il proprio sistema operativo, sullo stesso server fisico.
+      \section{Hypervisor}
+        \paragraph{}L'\textbf{hypervisor} crea lo strato di \textbf{virtualizzazione} che rende la virtualizzazione server possibile e contiene la \textbf{Virtual Machine Manager (VMM)}.
+        \paragraph{Tipologie}
+        \begin{itemize}
+          \item \textbf{Type 1}: caricata direttamente sull'hardware, può eseguire più virtual server, usato per data center o server
+            \subitem $\circ$ Hyper-v 
+            \subitem $\circ$ ESX/ESXi 
+            \subitem $\circ$ XenServer
+          \item \textbf{Type 2}: caricata in un sistema operativo eseguito sull'hardware, greater overhead, usato per desktop e laptop
+            \subitem $\circ$ Workstation 
+            \subitem $\circ$ Virtual Server
+            \subitem $\circ$ Fusion
+        \end{itemize}
+      \section{Amazon Elastic Compute Cloud 2 (EC2)}
+      \begin{itemize}
+        \item Mette a disposizione server virtuali (\textbf{istanze}) in modo semplice, veloce ed economico 
+        \item Scelta tipo istanza e template da utilizzare (Windows/Linux) e numero istanze
+        con AWS management console (o librerie SDK)
+        \item \textbf{Opzioni di pagamento}: on demand, istanze riservate, istanze spot
+        \item \textbf{Sicurezza} (Virtual Private Cloud - VPC
+        \item \textbf{Storage persistente}: Amazon Elastic Block Store (EBS)
+        \item \textbf{Autoscaling}
+      \end{itemize}
+      \section{Amazon Simple Storage Service (S3)}
+      \begin{itemize}
+        \item Fornisce uno \textbf{storage sicuro e facile} da usare
+        \item Diverse \textbf{classi di memorizzazione} (standard / standard infrequent access / glacier)
+        \item \textbf{Controllo} configurabile di \textbf{accesso ai dati}
+      \end{itemize}
+      \section{Amazon Elastic Block Store (EBS)}
+      \begin{itemize}
+        \item Blocco persistente di archiviazione di volumi di memoria usato con le istanze di Amazon EC2
+        \item Ogni volume di Amazon EBS viene automaticamente replicato senza la sua Aviabilty Zone in modo da offrire alta disponibilità e durata. 
+      \end{itemize}
+      \section{Dropbox exodus}
+        \begin{itemize}
+          \item I primi 8 anni della sua vita archiviava miliardi di file su Amazon S3
+          \item Tra il 2014 e 2016 ha costruito la propria rete di server ideata dai propri ingegneri per spostare i dati
+        \end{itemize}
+        \subsection{L'esodo}
+        \begin{itemize}
+          \item Hardware propietario che archivierà petabyte di dati
+          \item Nuovo codice ("Magic Pocket")
+          \item Installare 50 rack di hardware al giorno
+          \item Completare lo spostamento prima della scadenza del contratto con Amazon per evitare un rinnovo
+        \end{itemize}
+        \subsection{Conclusioni}
+        \paragraph{}Dropbox è riuscita a completare lo spostamento con successo entro i tempi previsiti.
+    \chapter{Container}
+    \paragraph{}I \textbf{containers} sono un meccanismo di virtualizzazione differente dalle Virtual Machines poichè 
+    permetto di avere più istanze \textbf{isolate} e \textbf{volatili} che scompaiono quando interrotte.\\
+    I containers sono \textbf{leggeri}, \textbf{veloci}, più \textbf{semplici da buildare} ma \textbf{meno sicuri} delle Virtual Machines.
+    \section{Docker}
+    \paragraph{}\textbf{Docker} è un'azienda che ha realizzato una piattaforma che permette di \textbf{eseguire una applicazione in ambiente "isolato"}.\\
+    Docker sfrutta la \textbf{virtualizzazione basata sui container} per eseguire in maniera isolata diverse \textbf{GUEST INSTANCES} sullo stesso sistema operativo.
+    \subsection{Caratteristiche}
+    \begin{itemize}
+      \item \textbf{Portabilità}: il software può essere impacchettato in \textbf{images}, file read only che può essere mandato in esecuzione da docker e creare quindi il container
+      \item Possono avere più istanze separate degli spazi utente (\textbf{containers})
+      \item \textbf{Interfaccia} utente \textbf{semplificata}
+      \item \textbf{Svantaggio}: sono meno isolati delle macchine virtuali, \textbf{condividono le risorse di sistema}
+    \end{itemize}
+    \subsection{Componenti}
+    \begin{itemize}
+      \item \textbf{Docker Engine}: permette di creare e mandare in esecuziuone container
+      \item \textbf{Docker Hub}: repository enorme che contiene molte immagini di container
+      \item \textbf{Docker Swarm Mode}: permette di eseguire un container su più docker host e divide gli swarm node in manager e worker, permettendo una \textbf{gestione dichiarativa} della nostra \textbf{applicazione}
+      \item \textbf{Images}: \textbf{template di sola lettura} usati per creare container, registrate in registry
+      \subitem $\circ$ \textbf{Stratificazione}: ogni strato può essere a sua volta una immagine 
+      \item \textbf{Registry}: \textbf{strutture di repository} che contengono insiemi di immagini per diverse versioni del sw
+    \end{itemize}
+    \subsection{Comandi}
+    \begin{itemize}
+      \item \textbf{PULL}: tiro un'immagine dal registry alla macchina
+      \item \textbf{RUN}: viene creato il container dell'immagine
+      \item \textbf{COMMIT}: salvare una nuova immagine
+      \item \textbf{PUSH}: caricare una immagine nel registry
+      \item \textbf{BUILD}: si crea un dockerfile che permette di creare un'immagine automaticamente
+    \end{itemize}
+    \subsection{Swarm mode}
+    \begin{itemize}
+      \item I nodi possono agire da \textbf{managers}, delegando tasks, o \textbf{workers}, eseguendo task assegnati.
+      \item È possibile definire lo \textbf{stato dei vari servizi} nello stack dell'applicazione, incluso il numero di \textbf{task da eseguire in ogni servizio}
+      \item \textbf{Swarm manager}:
+        \subitem $\circ$ assegna ad ogni servizio nello swarm un unico DNS name
+        \subitem $\circ$ bilancia il carico dei container in esecuzione 
+        \subitem $\circ$ monitora lo stato del cluster e lo allinea con quello desiderato
+    \end{itemize}
     \chapter{PaaS (Platform as a Service)}
       Servizio che fornisce hardware e software per lo sviluppo di applicazioni. L'utente deve fornire solo l'applicazione e i dati
     \paragraph{Vantaggi}
@@ -74,17 +165,21 @@
   \chapter{Modelli di Business}
     \paragraph{}Un \textbf{business model} descrive il razionale di come una azienda \textbf{crea}, \textbf{consegna} e \textbf{acquisisce valore}.
     \begin{itemize}
-      \item Segmenti di mercato: definisce il gruppo di persone o organizzazioni a cui il servizio mira di raggiungere
-      \item Proposta:
-      \item Canali: Le modalità in cui la compagnia raggiunge il cliente
-      \item Relazioni con i clienti
-      \item Flussi di guadagno:
-      \item Risorse chiave
-      \item Attività chiave
-      \item Partner chiave
-      \item Struttura di costo
+      \item \textbf{Customer Segments}: il gruppo di persone o organizzazioni a cui il servizio mira di raggiungere
+      \item \textbf{Valuer Propositions}: cosa rende speciale il servizio
+      \item \textbf{Channels}: le modalità in cui la compagnia raggiunge il cliente
+      \item \textbf{Customer Relationships}: tipo di relazione che la compagnia stabilisce col cliente 
+      \item \textbf{Revenue Streams}: il flusso di entrate che la compagnia genera da ogni segmento di clientela
+      \item \textbf{Key Resources}: le risorse più importanti richieste per il modello di business 
+      \item \textbf{Key Activities}: le attività più importanti che la compagnia deve svolgere
+      \item \textbf{Key Partners}: la rete di fornitori e partners per il business 
+      \item \textbf{Cost Structure}: i costi che si incontrano per operare nel modello di business
     \end{itemize}
-      \section{Customer insights}
-    Fulfillment:
-    
+      \section{Business innovation}
+        \begin{itemize}
+          \item \textbf{Resource-driven}: ha origine da \textbf{infrastrutture o partner gia esistenti} usate per espandere o trasformare il business model 
+          \item \textbf{Offer-driven}: crea nuova value proposition che influenza altri ambiti del business model
+          \item \textbf{Custmer-driven}: basato sulle necessità del cliente, accesso facilitato o aumento di convenienza
+          \item \textbf{Finance-driven}: guidata dal \textbf{revenue stream}, meccanismo di prezzi o riduzione dei cost structure
+        \end{itemize}
 \end{document}
