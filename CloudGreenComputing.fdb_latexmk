@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1648415051 "c:/Users/Stefano/Desktop/UNIVERSITÁ/CGC/Latex/CloudGreenComputing.tex" "CloudGreenComputing.pdf" "CloudGreenComputing" 1648415053
+["pdflatex"] 1649666918 "c:/Users/Stefano/Desktop/UNIVERSITÁ/CGC/Latex/CloudGreenComputing.tex" "CloudGreenComputing.pdf" "CloudGreenComputing" 1649666919
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001775420 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -22,6 +22,7 @@
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb" 1215618300 136101 b18d10b3436f8cb0cd04046deb340fe7 ""
   "C:/Program Files/MiKTeX 2.9/tex/context/base/mkii/supp-pdf.mkii" 1580393758 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -56,10 +57,10 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1636288472 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/Stefano/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map" 1638981020 330337 f752d5b5e6776e1c6d2af00aa9101197 ""
   "C:/Users/Stefano/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1638981408 10436033 0330707afcf1f7a30301f6a72adad0ac ""
-  "CloudGreenComputing.aux" 1648415053 4268 c62807d18539ec96bc568fea3abe3f00 "pdflatex"
-  "CloudGreenComputing.tex" 1648415045 11237 e0849e66504dbab2cde5a1e0441a5295 ""
-  "CloudGreenComputing.toc" 1648415053 2249 82ab6def3d94f49bb6e287943bb3e4de "pdflatex"
-  "c:/Users/Stefano/Desktop/UNIVERSITÁ/CGC/Latex/CloudGreenComputing.tex" 1648415045 11237 e0849e66504dbab2cde5a1e0441a5295 ""
+  "CloudGreenComputing.aux" 1649666919 5423 78ffafd7cb60ea1c703d8bfc64ca7ad7 "pdflatex"
+  "CloudGreenComputing.tex" 1649666916 13384 835e54621380a591c85eb9f3183d73ac ""
+  "CloudGreenComputing.toc" 1649666919 2916 b954c9072e5b64151f250a3167ed8b1b "pdflatex"
+  "c:/Users/Stefano/Desktop/UNIVERSITÁ/CGC/Latex/CloudGreenComputing.tex" 1649666916 13384 835e54621380a591c85eb9f3183d73ac ""
   (generated)
   "CloudGreenComputing.aux"
   "CloudGreenComputing.log"
