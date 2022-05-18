@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1652887096 "c:/Users/nicol/Desktop/CGC/CloudGreenComputing.tex" "CloudGreenComputing.pdf" "CloudGreenComputing" 1652887097
+["pdflatex"] 1652889827 "c:/Users/nicol/Desktop/CGC/CloudGreenComputing.tex" "CloudGreenComputing.pdf" "CloudGreenComputing" 1652889829
   "C:/Users/nicol/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1648312357 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/nicol/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1648312359 14064 55063b3a9e954be42d70aa3d54d5fced ""
   "C:/Users/nicol/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648312346 10246961 0e336e9562203a5329b876ac2fd7b839 ""
@@ -56,9 +56,9 @@
   "C:/Users/nicol/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1644218660 29921 d0acc05a38bd4aa3af2017f0b7c137ce ""
   "C:/Users/nicol/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1636713860 32262 2bb622a0aa56c4a7a5cbdfe9d122c15a ""
   "C:/Users/nicol/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636288472 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "CloudGreenComputing.aux" 1652887097 8566 119144615be1e9dcc2eeef47dd296a34 "pdflatex"
-  "CloudGreenComputing.tex" 1652887094 23203 2f56842990fa2a4e7b2f4b324077f8af ""
-  "CloudGreenComputing.toc" 1652887097 4917 f1c5373d6a392e9bb8c94f8af4c3baee "pdflatex"
+  "CloudGreenComputing.aux" 1652889829 8566 119144615be1e9dcc2eeef47dd296a34 "pdflatex"
+  "CloudGreenComputing.tex" 1652889827 23176 136d88a0756262e00565ba20646cbbd4 ""
+  "CloudGreenComputing.toc" 1652889829 4917 f1c5373d6a392e9bb8c94f8af4c3baee "pdflatex"
   "Immagini/ApplicationDelivery.png" 1652886544 136126 c01c0cd5729690ded38ab354e1c93e47 ""
   "Immagini/Community.png" 1652884077 101198 370ad51270ee64c57d385e6958eda886 ""
   "Immagini/Development.png" 1652885049 174988 035164282f841b24f7047fb0f2d5ff8b ""
@@ -73,7 +73,7 @@
   "Immagini/SourceCode.png" 1652883696 101213 0ea06260557d5c3b302c16ced430914b ""
   "Immagini/TwoViews.png" 1652884569 233471 198669d3d3cce7f2f518c2b3a98183c7 ""
   "Immagini/Versioing.png" 1652885236 88089 985ebaaf2b623bb98286e8a6760dcdc1 ""
-  "c:/Users/nicol/Desktop/CGC/CloudGreenComputing.tex" 1652887094 23203 2f56842990fa2a4e7b2f4b324077f8af ""
+  "c:/Users/nicol/Desktop/CGC/CloudGreenComputing.tex" 1652889827 23176 136d88a0756262e00565ba20646cbbd4 ""
   (generated)
   "CloudGreenComputing.aux"
   "CloudGreenComputing.log"
