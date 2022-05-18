@@ -203,9 +203,11 @@
         \item 1,800 kg di materiale grezzo per produrre un personal computer (Rinoceronte)
         \item ICT contribuisce al 9\% di consumo elettrico in Europa 
         \item ICT contribuisce al 4\% di emissioni di carbonio in Europa
+        \item Produce il 2\% delle emissioni di CO2 globali (carburante aereo)
         \item È previsto ulteriore aumento nei prossimi anni (esponenzialmente nel networking 20,9\%) 
         \item 50 milioni di tonnellate all'anno di e-waste (770 milioni di lavatrici)
         \item Il traffico di e-waste ha un traffico monetario illegale maggiore del traffico di droga
+        \item  I data centre potranno arrivare al 28\% della domanda energetica per ICT.
       \end{itemize}
       \section{Datacenters}
       \begin{itemize}
@@ -412,5 +414,98 @@
               \centering
               \includegraphics[scale=0.5]{Immagini/FaasMarket.png}
               \includegraphics[scale=0.5]{Immagini/FaasMarket2.png}
-            \end{figure} 
+            \end{figure}
+      \chapter{Software sostenibile}
+          \section{Nozioni di base}
+          Efficienza: $$\varepsilon = \frac{\text{num.calcoli}}{\text{elettricità}}$$
+          $\text{Efficienza} \neq \text{Correttezza}$\\[5px]
+          \textbf{Sostenibilità}: Lo sviluppo sostenibile è lo sviluppo in grado di soddisfare i bisogni
+          del presente senza compromettere la possibilità delle future
+          generazioni di soddisfare i propri.
+          \paragraph{Impronta ecologica massima consentita secondo l’accordo?} 2000 kg CO2 annui per persona.
+          \paragraph{Quanta CO2 produce un cittadino europeo ogni anno?} 10000 kg.
+          \paragraph{Quanto CO2 produce l’invio di una mail?} 20 g.
+          \paragraph{Quanta CO2 produce una ricerca sul web?} 1 g.
+          \paragraph{Ingegnere del software} Persona che applica i principi dell'ingegneria del software per progettare, sviluppare, mantenere,
+          testare e valutare il software informatico.
+          \section{Triangolo di ferro}
+          \paragraph{}Gli ingegneri del software devono perseguire questi obiettivi contrastanti continuamente: \textbf{costo}, \textbf{tempo}, \textbf{qualità}.
+          \section{Il modello Greensoft}
+          \paragraph{}Il modello \textbf{Greensoft} è un modello olistico per lo sviluppo, utilizzo e dismissione di software sostenibile.
+          \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.4]{Immagini/Greensoft.png}
+          \end{figure}
+          \section{Ruoli e collaborazione}
+          \begin{itemize}
+            \item Diversi ruoli possono esssere ricoperti da una stessa persona
+            \item Ruoli ricoperti da persone diverse necessitano collaborazione tra queste
+            \item \textbf{DevOps fonde i ruoli di sviluppatore, operatore e architetto}
+          \end{itemize}
+          \section{Caso di studio}
+          \subsection{Architetto}
+          \paragraph{}Gli \textbf{architetti} sono coloro che determinano i requisiti funzionali e non-funzionali del sistema e che progettano le interazioni tra componenti.
+          \begin{itemize}
+            \item Possono includere la sostenibilità nei requisiti non-funzionali:
+            \subitem $\circ$ \textbf{Scalabilità}: possibilità di adattare il sistema alla domanda
+            \subitem $\circ$ \textbf{Performance}: tempo di risposta nel Service Level Agreement
+            \item Come?
+            \subitem $\circ$ scomponendo i servizi in \textbf{unità scalabili} (per risorsa: calcolo, rete, storage)
+            \subitem $\circ$ rendere possibile un \textbf{bin packing} ottimo sull’utilizzo delle risorse di calcolo
+          \end{itemize}
+          \subsection{Bin packing}
+          \begin{itemize}
+            \item Problema difficile: \textbf{NP-hard}
+            \item Corrisponde a minimizzare il numero di server per far girare i servizi che compongono il sistema
+            \item L’architetto può disegnare componenti più piccole che consentono di risolvere il problema del bin packing evitando frammentazione
+            \item La soluzione del problema verrà poi delegata a livelli più bassi gestiti da altri ruoli 
+          \end{itemize}
+          \subsection{CDN 101}
+          \paragraph{}Mantenere i dati in punti di presenza locali:
+          \begin{itemize}
+            \item Minor distanza per raggiungere i dispositivi dei clienti
+            \item Minore utilizzo di banda
+            \item Miglior utilizzo della rete, mantenendo contenuti popolari in cache
+          \end{itemize}
+          \subsection{Scelte implementative}
+          \begin{itemize}
+            \item Implementare servizi che richiedano un quantitativo ragionevole di risorse anche per favorire \textbf{bin packing}
+            \item Disaccoppiare implementazione da infrastruttura in modo da facilitare la migrazione a Cloud provider differenti
+          \end{itemize}
+          \subsection{Scegliere un linguaggio}
+          \paragraph{}Trovare un bilanciamento tra \textbf{energia consumata}, \textbf{tempo di esecuzione} e \textbf{memoria utilizzata}.
+          \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.5]{Immagini/Linguaggi.png}
+          \end{figure}
+          \subsection{Sviluppatore}
+          \begin{itemize}
+            \item Può cercare di ottimizzare l'efficienza del software 
+            \item Disaccoppiare applicazione da dettagli sull'infrastruttura
+            \item Ridurre lo spreco di risorse durante lo sviluppo
+          \end{itemize}
+          \subsection{Operatore}
+          \paragraph{}Coloro che gestiscono l’infrastruttura e garantiscono la disponibilità dell’applicazione
+          \begin{itemize}
+            \item Offrono risorse infrastrutturali adeguate a garantire le performance desiderate
+            \item Utilizzano al meglio le risorse per contenere i costi e favorire la sostenibilità
+            \item Garantiscono backup e ripristino
+            \item Implementano logs e monitoraggio
+            \item Ottimizzare l’uso delle risorse
+            \item Fare scelte infrastrutturali che garantiscano performance e facilitino il bin packing
+          \end{itemize}
+          \section{Quadro normativo}
+          \begin{itemize}
+            \item Le leggi e i regolamenti possono favorire una transizione sostenibile
+            \item Le emissioni dovute al ciclo di vita di un software sono una esternalità negativa
+            \item E’ un costo indiretto che viene pagato da terzi non coinvolti nel ciclo di vita di quel software
+            \item Le leggi possono tassare le esternalità negative 
+            \item Le leggi possono obbligare alla trasparenza per creare consapevolezza tra i clienti
+          \end{itemize}
+          \section{EU vs the World}
+          \paragraph{}L’Unione Europea ha definito una direttiva su «Corporate sustainability reporting», all’interno del Green Deal europeo.
+          \begin{itemize}
+            \item Obbliga le aziende a relazionare sulla sostenibilità ambientale, sarà in vigore dal 2023.
+          \end{itemize}
+
 \end{document}

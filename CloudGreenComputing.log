@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.26)  18 MAY 2022 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.26)  18 MAY 2022 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -279,141 +279,157 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/nicol/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (CloudGreenComputing.toc [1
 
-])
+] [2])
 \tf@toc=\write3
 \openout3 = `CloudGreenComputing.toc'.
 
- [2] [3
+ [3] [4
 
 ]
 Capitolo 1.
-[4
+[5
 
-] [5] [6]
+] [6] [7]
 Capitolo 2.
-[7
+[8
 
-] [8]
+] [9]
 Capitolo 3.
-[9
+[10
 
-] [10]
+] [11]
 Capitolo 4.
-[11
+[12
 
-] [12] [13
+] [13] [14
 
 ]
 Capitolo 5.
-[14
+[15
 
-] [15]
+] [16] [17]
 Capitolo 6.
-[16
+[18
 
 ]
-<Immagini/TwoViews.png, id=60, 1114.91531pt x 490.83376pt>
+<Immagini/TwoViews.png, id=67, 1114.91531pt x 490.83376pt>
 File: Immagini/TwoViews.png Graphic file (type png)
 <use Immagini/TwoViews.png>
-Package pdftex.def Info: Immagini/TwoViews.png  used on input line 259.
+Package pdftex.def Info: Immagini/TwoViews.png  used on input line 261.
 (pdftex.def)             Requested size: 334.47717pt x 147.25125pt.
- [17
-
- <./Immagini/TwoViews.png>]
-<Immagini/License.png, id=66, 596.98032pt x 304.88907pt>
-File: Immagini/License.png Graphic file (type png)
-<use Immagini/License.png>
-Package pdftex.def Info: Immagini/License.png  used on input line 270.
-(pdftex.def)             Requested size: 238.78789pt x 121.95346pt.
-<Immagini/Installation.png, id=67, 557.83406pt x 325.215pt>
-File: Immagini/Installation.png Graphic file (type png)
-<use Immagini/Installation.png>
-Package pdftex.def Info: Immagini/Installation.png  used on input line 279.
-(pdftex.def)             Requested size: 223.12967pt x 130.0837pt.
- [18 <./Immagini/License.png> <./Immagini/Installation.png>]
-<Immagini/SourceCode.png, id=74, 666.99188pt x 304.13625pt>
-File: Immagini/SourceCode.png Graphic file (type png)
-<use Immagini/SourceCode.png>
-Package pdftex.def Info: Immagini/SourceCode.png  used on input line 289.
-(pdftex.def)             Requested size: 266.79202pt x 121.65233pt.
-<Immagini/Interface.png, id=75, 1045.65656pt x 297.36093pt>
-File: Immagini/Interface.png Graphic file (type png)
-<use Immagini/Interface.png>
-Package pdftex.def Info: Immagini/Interface.png  used on input line 298.
-(pdftex.def)             Requested size: 365.98528pt x 104.07788pt.
  [19
 
- <./Immagini/SourceCode.png> <./Immagini/Interface.png>]
-<Immagini/Community.png, id=81, 1167.61218pt x 217.5628pt>
-File: Immagini/Community.png Graphic file (type png)
-<use Immagini/Community.png>
-Package pdftex.def Info: Immagini/Community.png  used on input line 308.
-(pdftex.def)             Requested size: 350.28636pt x 65.26933pt.
-<Immagini/Documentation.png, id=82, 1168.365pt x 214.55156pt>
-File: Immagini/Documentation.png Graphic file (type png)
-<use Immagini/Documentation.png>
-Package pdftex.def Info: Immagini/Documentation.png  used on input line 317.
-(pdftex.def)             Requested size: 350.5122pt x 64.36595pt.
- [20
-
- <./Immagini/Community.png> <./Immagini/Documentation.png>]
-<Immagini/Development.png, id=88, 985.43156pt x 363.60844pt>
-File: Immagini/Development.png Graphic file (type png)
-<use Immagini/Development.png>
-Package pdftex.def Info: Immagini/Development.png  used on input line 328.
-(pdftex.def)             Requested size: 344.90622pt x 127.26485pt.
-<Immagini/Versioing.png, id=89, 538.26094pt x 298.86656pt>
-File: Immagini/Versioing.png Graphic file (type png)
-<use Immagini/Versioing.png>
-Package pdftex.def Info: Immagini/Versioing.png  used on input line 337.
-(pdftex.def)             Requested size: 269.1298pt x 149.4329pt.
+ <./Immagini/TwoViews.png>]
+<Immagini/License.png, id=73, 596.98032pt x 304.88907pt>
+File: Immagini/License.png Graphic file (type png)
+<use Immagini/License.png>
+Package pdftex.def Info: Immagini/License.png  used on input line 272.
+(pdftex.def)             Requested size: 238.78789pt x 121.95346pt.
+<Immagini/Installation.png, id=74, 557.83406pt x 325.215pt>
+File: Immagini/Installation.png Graphic file (type png)
+<use Immagini/Installation.png>
+Package pdftex.def Info: Immagini/Installation.png  used on input line 281.
+(pdftex.def)             Requested size: 223.12967pt x 130.0837pt.
+ [20 <./Immagini/License.png> <./Immagini/Installation.png>]
+<Immagini/SourceCode.png, id=80, 666.99188pt x 304.13625pt>
+File: Immagini/SourceCode.png Graphic file (type png)
+<use Immagini/SourceCode.png>
+Package pdftex.def Info: Immagini/SourceCode.png  used on input line 291.
+(pdftex.def)             Requested size: 266.79202pt x 121.65233pt.
+<Immagini/Interface.png, id=81, 1045.65656pt x 297.36093pt>
+File: Immagini/Interface.png Graphic file (type png)
+<use Immagini/Interface.png>
+Package pdftex.def Info: Immagini/Interface.png  used on input line 300.
+(pdftex.def)             Requested size: 365.98528pt x 104.07788pt.
  [21
 
- <./Immagini/Development.png> <./Immagini/Versioing.png>]
-<Immagini/FunctionOrchestration.png, id=95, 840.13875pt x 309.40594pt>
-File: Immagini/FunctionOrchestration.png Graphic file (type png)
-<use Immagini/FunctionOrchestration.png>
-Package pdftex.def Info: Immagini/FunctionOrchestration.png  used on input line 351.
-(pdftex.def)             Requested size: 336.04955pt x 123.76018pt.
- [22 <./Immagini/FunctionOrchestration.png>]
-<Immagini/Observability.png, id=100, 1070.49937pt x 224.33812pt>
-File: Immagini/Observability.png Graphic file (type png)
-<use Immagini/Observability.png>
-Package pdftex.def Info: Immagini/Observability.png  used on input line 370.
-(pdftex.def)             Requested size: 321.15228pt x 67.30194pt.
-<Immagini/ApplicationDelivery.png, id=101, 476.53032pt x 501.37312pt>
-File: Immagini/ApplicationDelivery.png Graphic file (type png)
-<use Immagini/ApplicationDelivery.png>
-Package pdftex.def Info: Immagini/ApplicationDelivery.png  used on input line 383.
-(pdftex.def)             Requested size: 142.96019pt x 150.41309pt.
+ <./Immagini/SourceCode.png> <./Immagini/Interface.png>]
+<Immagini/Community.png, id=87, 1167.61218pt x 217.5628pt>
+File: Immagini/Community.png Graphic file (type png)
+<use Immagini/Community.png>
+Package pdftex.def Info: Immagini/Community.png  used on input line 310.
+(pdftex.def)             Requested size: 350.28636pt x 65.26933pt.
+<Immagini/Documentation.png, id=88, 1168.365pt x 214.55156pt>
+File: Immagini/Documentation.png Graphic file (type png)
+<use Immagini/Documentation.png>
+Package pdftex.def Info: Immagini/Documentation.png  used on input line 319.
+(pdftex.def)             Requested size: 350.5122pt x 64.36595pt.
+ [22
+
+ <./Immagini/Community.png> <./Immagini/Documentation.png>]
+<Immagini/Development.png, id=94, 985.43156pt x 363.60844pt>
+File: Immagini/Development.png Graphic file (type png)
+<use Immagini/Development.png>
+Package pdftex.def Info: Immagini/Development.png  used on input line 330.
+(pdftex.def)             Requested size: 344.90622pt x 127.26485pt.
+<Immagini/Versioing.png, id=95, 538.26094pt x 298.86656pt>
+File: Immagini/Versioing.png Graphic file (type png)
+<use Immagini/Versioing.png>
+Package pdftex.def Info: Immagini/Versioing.png  used on input line 339.
+(pdftex.def)             Requested size: 269.1298pt x 149.4329pt.
  [23
 
- <./Immagini/Observability.png> <./Immagini/ApplicationDelivery.png>] [24]
-<Immagini/FaasMarket.png, id=111, 429.85594pt x 347.04657pt>
-File: Immagini/FaasMarket.png Graphic file (type png)
-<use Immagini/FaasMarket.png>
-Package pdftex.def Info: Immagini/FaasMarket.png  used on input line 413.
-(pdftex.def)             Requested size: 214.92744pt x 173.52286pt.
-<Immagini/FaasMarket2.png, id=112, 542.77782pt x 351.56343pt>
-File: Immagini/FaasMarket2.png Graphic file (type png)
-<use Immagini/FaasMarket2.png>
-Package pdftex.def Info: Immagini/FaasMarket2.png  used on input line 414.
-(pdftex.def)             Requested size: 271.38824pt x 175.78128pt.
+ <./Immagini/Development.png> <./Immagini/Versioing.png>]
+<Immagini/FunctionOrchestration.png, id=101, 840.13875pt x 309.40594pt>
+File: Immagini/FunctionOrchestration.png Graphic file (type png)
+<use Immagini/FunctionOrchestration.png>
+Package pdftex.def Info: Immagini/FunctionOrchestration.png  used on input line 353.
+(pdftex.def)             Requested size: 336.04955pt x 123.76018pt.
+ [24 <./Immagini/FunctionOrchestration.png>]
+<Immagini/Observability.png, id=107, 1070.49937pt x 224.33812pt>
+File: Immagini/Observability.png Graphic file (type png)
+<use Immagini/Observability.png>
+Package pdftex.def Info: Immagini/Observability.png  used on input line 372.
+(pdftex.def)             Requested size: 321.15228pt x 67.30194pt.
+<Immagini/ApplicationDelivery.png, id=108, 476.53032pt x 501.37312pt>
+File: Immagini/ApplicationDelivery.png Graphic file (type png)
+<use Immagini/ApplicationDelivery.png>
+Package pdftex.def Info: Immagini/ApplicationDelivery.png  used on input line 385.
+(pdftex.def)             Requested size: 142.96019pt x 150.41309pt.
  [25
 
- <./Immagini/FaasMarket.png> <./Immagini/FaasMarket2.png>] (CloudGreenComputing.aux) ) 
+ <./Immagini/Observability.png> <./Immagini/ApplicationDelivery.png>] [26]
+<Immagini/FaasMarket.png, id=117, 429.85594pt x 347.04657pt>
+File: Immagini/FaasMarket.png Graphic file (type png)
+<use Immagini/FaasMarket.png>
+Package pdftex.def Info: Immagini/FaasMarket.png  used on input line 415.
+(pdftex.def)             Requested size: 214.92744pt x 173.52286pt.
+<Immagini/FaasMarket2.png, id=118, 542.77782pt x 351.56343pt>
+File: Immagini/FaasMarket2.png Graphic file (type png)
+<use Immagini/FaasMarket2.png>
+Package pdftex.def Info: Immagini/FaasMarket2.png  used on input line 416.
+(pdftex.def)             Requested size: 271.38824pt x 175.78128pt.
+ [27
+
+ <./Immagini/FaasMarket.png> <./Immagini/FaasMarket2.png>]
+Capitolo 7.
+[28
+
+]
+<Immagini/Greensoft.png, id=128, 456.20438pt x 651.18282pt>
+File: Immagini/Greensoft.png Graphic file (type png)
+<use Immagini/Greensoft.png>
+Package pdftex.def Info: Immagini/Greensoft.png  used on input line 437.
+(pdftex.def)             Requested size: 182.4785pt x 260.4685pt.
+ [29 <./Immagini/Greensoft.png>] [30]
+<Immagini/Linguaggi.png, id=137, 502.87875pt x 488.57532pt>
+File: Immagini/Linguaggi.png Graphic file (type png)
+<use Immagini/Linguaggi.png>
+Package pdftex.def Info: Immagini/Linguaggi.png  used on input line 479.
+(pdftex.def)             Requested size: 251.43875pt x 244.28706pt.
+ [31 <./Immagini/Linguaggi.png>] [32] (CloudGreenComputing.aux) ) 
 Here is how much of TeX's memory you used:
- 4940 strings out of 478582
- 76223 string characters out of 2844344
- 395237 words of memory out of 3000000
- 23071 multiletter control sequences out of 15000+600000
+ 4954 strings out of 478582
+ 76575 string characters out of 2844344
+ 397237 words of memory out of 3000000
+ 23083 multiletter control sequences out of 15000+600000
  479272 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,62p,301b,262s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\nicol\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on CloudGreenComputing.pdf (26 pages, 1724793 bytes).
+ 55i,8n,62p,301b,262s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\nicol\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nicol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on CloudGreenComputing.pdf (33 pages, 2219432 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
