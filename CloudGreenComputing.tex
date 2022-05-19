@@ -507,5 +507,64 @@
           \begin{itemize}
             \item Obbliga le aziende a relazionare sulla sostenibilità ambientale, sarà in vigore dal 2023.
           \end{itemize}
-
+      \chapter{Microservizi}
+          \paragraph{}Un \textbf{microservizio} ha l'obiettivo di accorciare il \textit{lead time} per nuove funzionalità e aggiornamenti. 
+          \begin{itemize}
+            \item Accelera il rebuild e il redeployment
+            \item Riduce corde fra silos funzionali (vari gruppi di un'azienda)
+            \item Riuscire a scalare efficacemente
+          \end{itemize}
+          \paragraph{Svantaggi}
+          \begin{itemize}
+            \item Eccesso di comunicazione
+            \item Complessità
+            \item Difficoltà nell'evitare duplicazione dei dati 
+          \end{itemize}
+          \section{Monoliti}
+          \paragraph{}Per \textbf{monolite} si intende la tipica applicazione di un'azienda il quale cambiamento di una piccola parte richiede
+          il \textbf{rebuilding} e il \textbf{redeployment} dell'intero monolite. Inoltre lo \textbf{scaling} è richiesto per l'intera applicazione.
+          \section{Microservizi}
+          \subsection{Service-orientation}
+            \paragraph{}Sviluppare un'applicazione come un insieme di servizi
+            \begin{itemize}
+              \item Ogni servizio è eseguito in container separati
+              \item Comunicazione con meccanismi leggeri (HTTP request-response e code asincrone per disaccoppiamento)
+              \item Poliglotta (linguaggi diversi)
+            \end{itemize}
+          \subsection{Organizzare servizzi intorno alle business capability}
+            \begin{itemize}
+              \item Cross-functional team
+            \end{itemize}
+          \subsection{Decentralizzazione dei dati}
+          \begin{itemize}
+            \item Ogni servizio ha un suo database
+            \item Eventual consistency e compensation invece di transazioni distribuite
+          \end{itemize}
+          \subsection{Servizi sviluppabili indipendentemente}
+          \begin{itemize}
+            \item Possibilità di modificare il servizio senza necessariamente cambiare gli altri servizi
+          \end{itemize}
+          \subsection{Servizi scalabili in orizzontale}
+          \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.3]{Immagini/HScaling.png}
+            \includegraphics[scale=0.3]{Immagini/HVScaling.png}
+          \end{figure}
+          \subsection{Servizi resistenti agli errori}
+          \begin{itemize}
+            \item Tolleranza agli errori è un requisito
+            \item Ogni chiamata di servizio può fallire 
+            \item Chiamate sincrone tra servizi possono indurre a problemi di downtime
+          \end{itemize}
+        \section{CAP Theorem}
+        \paragraph{}In presenza di una \textbf{partizione} di rete, non puoi avere sia \textbf{accessibilità} che \textbf{consistenza}.
+        \subsection{Approccio Netflix}
+        \paragraph{}Per replicare i dati in \textit{n} nodi Netflix:
+        \begin{itemize}
+          \item Scrive dove è momentaneamente possibile, poi sistema le mancanze
+          \item Usa il quorum: (n/2+1) devono rispondere
+        \end{itemize}
+        \section{Chaos monkey}
+        \paragraph{}Il metodo \textbf{chaos monkey} termina casualmente istanze e container che vengono eseguiti all'interno dell'ambiente di produzione
+        
 \end{document}
