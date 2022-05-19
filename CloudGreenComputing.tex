@@ -58,7 +58,7 @@
       \section{Amazon Elastic Block Store (EBS)}
       \begin{itemize}
         \item Blocco persistente di archiviazione di volumi di memoria usato con le istanze di Amazon EC2
-        \item Ogni volume di Amazon EBS viene automaticamente replicato senza la sua Aviabilty Zone in modo da offrire alta disponibilità e durata. 
+        \item Ogni volume di Amazon EBS viene automaticamente replicato senza la sua Availability Zone in modo da offrire alta disponibilità e durata. 
       \end{itemize}
       \section{Dropbox exodus}
         \begin{itemize}
@@ -67,15 +67,15 @@
         \end{itemize}
         \subsection{L'esodo}
         \begin{itemize}
-          \item Hardware propietario che archivierà petabyte di dati
+          \item Hardware proprietario che archivierà petabyte di dati
           \item Nuovo codice ("Magic Pocket")
           \item Installare 50 rack di hardware al giorno
           \item Completare lo spostamento prima della scadenza del contratto con Amazon per evitare un rinnovo
         \end{itemize}
         \subsection{Conclusioni}
-        \paragraph{}Dropbox è riuscita a completare lo spostamento con successo entro i tempi previsiti.
+        \paragraph{}Dropbox è riuscita a completare lo spostamento con successo entro i tempi previsti.
     \chapter{Container}
-    \paragraph{}I \textbf{containers} sono un meccanismo di virtualizzazione differente dalle Virtual Machines poichè 
+    \paragraph{}I \textbf{containers} sono un meccanismo di virtualizzazione differente dalle Virtual Machines poiché 
     permetto di avere più istanze \textbf{isolate} e \textbf{volatili} che scompaiono quando interrotte.\\
     I containers sono \textbf{leggeri}, \textbf{veloci}, più \textbf{semplici da buildare} ma \textbf{meno sicuri} delle Virtual Machines.
     \section{Docker}
@@ -90,7 +90,7 @@
     \end{itemize}
     \subsection{Componenti}
     \begin{itemize}
-      \item \textbf{Docker Engine}: permette di creare e mandare in esecuziuone container
+      \item \textbf{Docker Engine}: permette di creare e mandare in esecuzione container
       \item \textbf{Docker Hub}: repository enorme che contiene molte immagini di container
       \item \textbf{Docker Swarm Mode}: permette di eseguire un container su più docker host e divide gli swarm node in manager e worker, permettendo una \textbf{gestione dichiarativa} della nostra \textbf{applicazione}
       \item \textbf{Images}: \textbf{template di sola lettura} usati per creare container, registrate in registry
@@ -311,7 +311,7 @@
             \end{figure}
             \subsection{Business view: Documentation}
             \begin{itemize}
-              \item Tutte le piataforme forniscono deployment dell'applicazione e documentazione d'uso della piattaforma 
+              \item Tutte le piattaforme forniscono deployment dell'applicazione e documentazione d'uso della piattaforma 
               \item Platform development e architettura non sono sempre documentate in piattaforme open sources
             \end{itemize}
             \begin{figure}[h]
@@ -405,7 +405,7 @@
             \end{itemize}
             \subsection{Technical view: Access Management}
             \begin{itemize}
-              \item Commerciali: supportano nativamente autenticazione e controlo di accesso alle risorse 
+              \item Commerciali: supportano nativamente autenticazione e controllo di accesso alle risorse 
               \item Open Source: usano funzioni offerte dal ambiente di hosting per garantire autenticazione e accesso alle risorse
             \end{itemize}
             \clearpage
@@ -438,7 +438,7 @@
           \end{figure}
           \section{Ruoli e collaborazione}
           \begin{itemize}
-            \item Diversi ruoli possono esssere ricoperti da una stessa persona
+            \item Diversi ruoli possono essere ricoperti da una stessa persona
             \item Ruoli ricoperti da persone diverse necessitano collaborazione tra queste
             \item \textbf{DevOps fonde i ruoli di sviluppatore, operatore e architetto}
           \end{itemize}
@@ -451,7 +451,7 @@
             \subitem $\circ$ \textbf{Performance}: tempo di risposta nel Service Level Agreement
             \item Come?
             \subitem $\circ$ scomponendo i servizi in \textbf{unità scalabili} (per risorsa: calcolo, rete, storage)
-            \subitem $\circ$ rendere possibile un \textbf{bin packing} ottimo sull’utilizzo delle risorse di calcolo
+            \subitem $\circ$ rendere possibile un \textbf{bin packing} ottimo sull'utilizzo delle risorse di calcolo
           \end{itemize}
           \subsection{Bin packing}
           \begin{itemize}
@@ -531,7 +531,7 @@
               \item Comunicazione con meccanismi leggeri (HTTP request-response e code asincrone per disaccoppiamento)
               \item Poliglotta (linguaggi diversi)
             \end{itemize}
-          \subsection{Organizzare servizzi intorno alle business capability}
+          \subsection{Organizzare servizi intorno alle business capability}
             \begin{itemize}
               \item Cross-functional team
             \end{itemize}
@@ -566,5 +566,51 @@
         \end{itemize}
         \section{Chaos monkey}
         \paragraph{}Il metodo \textbf{chaos monkey} termina casualmente istanze e container che vengono eseguiti all'interno dell'ambiente di produzione
-        
+      \chapter{Kubernetes}
+        \section{Containers}
+        \begin{itemize}
+          \item I container forniscono un meccanismo leggero per isolare lo sviluppo di un'applicazione. 
+          \item I container immagini possono essere eseguiti in modo affidabile su ogni macchina, fornendoci la portabilità dallo sviluppo all'implementazione.
+          \item Più carichi di lavoro possono essere piazzati sulla stessa macchina fisica, raggiungendo elevati utilizzi di memoria e CPU
+        \end{itemize}
+        \section{A container orchestration platform}
+          \paragraph{} k8(Kubernetes) gestisce l'intero ciclo dei singoli container, avvia o spegne le risorse in base alla necessità.\\
+          Fornisce un meccanismo alle applicazioni per comunicare tra loro anche quando i container sottostanti vengono creati e distrutti.\\
+          Dato un set di container workloads da eseguire e un set di macchine in un cluster, il container orchestrator esamina tutti i container e determina la macchina ottimale a cui assegnare quel workload.       
+        \clearpage
+          \section{Design principles: dichiarabilità}
+          \paragraph{} K8s troverà quando l'attuale stato del sistema non rispetta le nostre aspettative e interverrà per fixare il problema, facendo diventare il nostro sistema "self-healing".
+          \paragraph{Definiamo gli stati desiderati da una collezione di oggetti}
+          \begin{itemize}
+            \item tutti gli oggetti hanno una specifica nella quale inseriamo lo stato desiderato e uno stato che riflette lo stato attuale dell'oggetto.
+            \item Esegue costantemente domande a ogni oggetto per assicurarsi che il suo stato sia uguale alle specifiche.
+            \subitem{$\circ$} Se un oggetto non risponde, K8 avvia una nuova versione per sostituirlo.
+            \subitem{$\circ$} Se un oggetto si è allontano dalle specifiche, k8s emette i comandi necessari per riportare l'oggetto allo stato desiderato.
+          \end{itemize}
+          \section{Design principles: distribuzione}
+          \paragraph{}K8s fornisce una interfaccia unificata per interagire con un cluster di macchine. Non ci dobbiamo preoccupare della comunicazione tra le singole macchine.
+          \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.4]{Immagini/k8distribuzione.png}
+          \end{figure}
+          \clearpage
+          \section{Design principles: disaccoppiamento}
+          \paragraph{}I container dovrebbero essere sviluppati avendo un solo obiettivo in mente (microservice-based architecture)\\
+          K8s supporta nativamente l'idea di disaccoppiare i servizi che possono essere scalabili e aggiornati indipendentemente.
+          \section{Design principles: strutture immutabili}
+          \paragraph{}Per ottenere il massimo dai container e dall'orchestratore, dovremmo implementare una struttura immutabile.\\
+          Durante il ciclo di vita di un progetto dovremmo usare lo stesso container immagine (e cambiare solo le configurazioni esterne all'imagine).
+          I container sono disegnati per essere effimeri, pronti per essere rimpiazzati da altri container in qualsiasi momento.\\
+          Mantenendo la struttura immutata rendiamo più facile il roll back delle applicazioni allo stato precedente. Possiamo semplicemente aggiornare la nostra configurazione per usare un vecchio container immagine. 
+          \section{K8s oggetti}
+          \paragraph{}Gli oggetti di K8s possono essere definiti in \textbf{manifesti}
+          \subsection{K8s: pod}
+          \paragraph{}Un pod consiste in 
+            \begin{itemize}
+              \item uno o più relazionati container
+              \item un livello di rete condiviso
+              \item un volume di filesystem condiviso
+            \end{itemize}
+          \subsection{K8s: deployment}
+          \paragraph{} 
 \end{document}

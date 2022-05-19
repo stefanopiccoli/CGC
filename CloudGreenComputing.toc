@@ -111,7 +111,7 @@
 \contentsline {section}{\numberline {8.2}Microservizi}{33}{}%
 \contentsline {subsection}{\numberline {8.2.1}Service-orientation}{33}{}%
 \contentsline {paragraph}{}{33}{}%
-\contentsline {subsection}{\numberline {8.2.2}Organizzare servizzi intorno alle business capability}{34}{}%
+\contentsline {subsection}{\numberline {8.2.2}Organizzare servizi intorno alle business capability}{34}{}%
 \contentsline {subsection}{\numberline {8.2.3}Decentralizzazione dei dati}{34}{}%
 \contentsline {subsection}{\numberline {8.2.4}Servizi sviluppabili indipendentemente}{34}{}%
 \contentsline {subsection}{\numberline {8.2.5}Servizi scalabili in orizzontale}{34}{}%
@@ -122,3 +122,22 @@
 \contentsline {paragraph}{}{35}{}%
 \contentsline {section}{\numberline {8.4}Chaos monkey}{35}{}%
 \contentsline {paragraph}{}{35}{}%
+\contentsline {chapter}{\numberline {9}Kubernetes}{36}{}%
+\contentsline {section}{\numberline {9.1}Containers}{36}{}%
+\contentsline {section}{\numberline {9.2}A container orchestration platform}{36}{}%
+\contentsline {paragraph}{}{36}{}%
+\contentsline {section}{\numberline {9.3}Design principles: dichiarabilità}{37}{}%
+\contentsline {paragraph}{}{37}{}%
+\contentsline {paragraph}{Definiamo gli stati desiderati da una collezione di oggetti}{37}{}%
+\contentsline {section}{\numberline {9.4}Design principles: distribuzione}{37}{}%
+\contentsline {paragraph}{}{37}{}%
+\contentsline {section}{\numberline {9.5}Design principles: disaccoppiamento}{38}{}%
+\contentsline {paragraph}{}{38}{}%
+\contentsline {section}{\numberline {9.6}Design principles: strutture immutabili}{38}{}%
+\contentsline {paragraph}{}{38}{}%
+\contentsline {section}{\numberline {9.7}K8s oggetti}{38}{}%
+\contentsline {paragraph}{}{38}{}%
+\contentsline {subsection}{\numberline {9.7.1}K8s: pod}{38}{}%
+\contentsline {paragraph}{}{38}{}%
+\contentsline {subsection}{\numberline {9.7.2}K8s: deployment}{38}{}%
+\contentsline {paragraph}{}{38}{}%
