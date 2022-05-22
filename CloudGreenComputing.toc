@@ -1,154 +1,170 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {part}{I\hspace {1em}Cloud Computing}{4}{}%
-\contentsline {chapter}{\numberline {1}IaaS (Infrastructure as a Service)}{5}{}%
-\contentsline {section}{\numberline {1.1}Virtualizzazione}{5}{}%
-\contentsline {paragraph}{}{5}{}%
-\contentsline {section}{\numberline {1.2}Hypervisor}{5}{}%
-\contentsline {paragraph}{}{5}{}%
-\contentsline {paragraph}{Tipologie}{5}{}%
-\contentsline {section}{\numberline {1.3}Amazon Elastic Compute Cloud 2 (EC2)}{6}{}%
-\contentsline {section}{\numberline {1.4}Amazon Simple Storage Service (S3)}{6}{}%
-\contentsline {section}{\numberline {1.5}Amazon Elastic Block Store (EBS)}{6}{}%
-\contentsline {section}{\numberline {1.6}Dropbox exodus}{6}{}%
-\contentsline {subsection}{\numberline {1.6.1}L'esodo}{7}{}%
-\contentsline {subsection}{\numberline {1.6.2}Conclusioni}{7}{}%
-\contentsline {paragraph}{}{7}{}%
-\contentsline {chapter}{\numberline {2}Container}{8}{}%
+\contentsline {part}{I\hspace {1em}Cloud Computing}{5}{}%
+\contentsline {chapter}{\numberline {1}IaaS (Infrastructure as a Service)}{6}{}%
+\contentsline {section}{\numberline {1.1}Virtualizzazione}{6}{}%
+\contentsline {paragraph}{}{6}{}%
+\contentsline {section}{\numberline {1.2}Hypervisor}{6}{}%
+\contentsline {paragraph}{}{6}{}%
+\contentsline {paragraph}{Tipologie}{6}{}%
+\contentsline {section}{\numberline {1.3}Amazon Elastic Compute Cloud 2 (EC2)}{7}{}%
+\contentsline {section}{\numberline {1.4}Amazon Simple Storage Service (S3)}{7}{}%
+\contentsline {section}{\numberline {1.5}Amazon Elastic Block Store (EBS)}{7}{}%
+\contentsline {section}{\numberline {1.6}Dropbox exodus}{7}{}%
+\contentsline {subsection}{\numberline {1.6.1}L'esodo}{8}{}%
+\contentsline {subsection}{\numberline {1.6.2}Conclusioni}{8}{}%
 \contentsline {paragraph}{}{8}{}%
-\contentsline {section}{\numberline {2.1}Docker}{8}{}%
-\contentsline {paragraph}{}{8}{}%
-\contentsline {subsection}{\numberline {2.1.1}Caratteristiche}{8}{}%
-\contentsline {subsection}{\numberline {2.1.2}Componenti}{9}{}%
-\contentsline {subsection}{\numberline {2.1.3}Comandi}{9}{}%
-\contentsline {subsection}{\numberline {2.1.4}Swarm mode}{9}{}%
-\contentsline {chapter}{\numberline {3}PaaS (Platform as a Service)}{10}{}%
-\contentsline {paragraph}{Vantaggi}{10}{}%
-\contentsline {paragraph}{Rischi}{10}{}%
-\contentsline {section}{\numberline {3.1}Heroku}{10}{}%
-\contentsline {paragraph}{}{10}{}%
-\contentsline {subsection}{\numberline {3.1.1}Dynos}{10}{}%
-\contentsline {paragraph}{}{10}{}%
-\contentsline {paragraph}{Vantaggi}{10}{}%
-\contentsline {paragraph}{Premium:}{11}{}%
-\contentsline {subsection}{\numberline {3.1.2}Buildtime}{11}{}%
+\contentsline {chapter}{\numberline {2}Container}{9}{}%
+\contentsline {paragraph}{}{9}{}%
+\contentsline {section}{\numberline {2.1}Docker}{9}{}%
+\contentsline {paragraph}{}{9}{}%
+\contentsline {subsection}{\numberline {2.1.1}Caratteristiche}{9}{}%
+\contentsline {subsection}{\numberline {2.1.2}Componenti}{10}{}%
+\contentsline {subsection}{\numberline {2.1.3}Comandi}{10}{}%
+\contentsline {subsection}{\numberline {2.1.4}Swarm mode}{10}{}%
+\contentsline {chapter}{\numberline {3}PaaS (Platform as a Service)}{11}{}%
+\contentsline {paragraph}{Vantaggi}{11}{}%
+\contentsline {paragraph}{Rischi}{11}{}%
+\contentsline {section}{\numberline {3.1}Heroku}{11}{}%
 \contentsline {paragraph}{}{11}{}%
-\contentsline {subsection}{\numberline {3.1.3}Runtime}{11}{}%
-\contentsline {subsection}{\numberline {3.1.4}Esempio}{11}{}%
-\contentsline {subsection}{\numberline {3.1.5}Add-ons}{11}{}%
+\contentsline {subsection}{\numberline {3.1.1}Dynos}{11}{}%
 \contentsline {paragraph}{}{11}{}%
-\contentsline {section}{\numberline {3.2}Altri PaaS}{11}{}%
-\contentsline {chapter}{\numberline {4}Modelli di Business}{12}{}%
+\contentsline {paragraph}{Vantaggi}{11}{}%
+\contentsline {paragraph}{Premium:}{12}{}%
+\contentsline {subsection}{\numberline {3.1.2}Buildtime}{12}{}%
 \contentsline {paragraph}{}{12}{}%
-\contentsline {section}{\numberline {4.1}Business innovation}{12}{}%
-\contentsline {part}{II\hspace {1em}Green Computing}{14}{}%
-\contentsline {chapter}{\numberline {5}Introduzione}{15}{}%
-\contentsline {paragraph}{ICT è una minaccia per la sostenibilità ambientale?}{15}{}%
-\contentsline {paragraph}{Green Computing}{15}{}%
-\contentsline {section}{\numberline {5.1}Sprechi}{15}{}%
-\contentsline {section}{\numberline {5.2}Datacenters}{16}{}%
-\contentsline {section}{\numberline {5.3}Obsolescenza programmata}{16}{}%
-\contentsline {subsection}{\numberline {5.3.1}Cartello Phoebus}{16}{}%
-\contentsline {subsection}{\numberline {5.3.2}Obsolescenza percepita}{16}{}%
-\contentsline {section}{\numberline {5.4}Progettare dispositivi efficienti energeticamente}{16}{}%
-\contentsline {chapter}{\numberline {6}Faas (Function As A Service)}{18}{}%
-\contentsline {section}{\numberline {6.1}AWS Lambda}{18}{}%
-\contentsline {section}{\numberline {6.2}Tipi di FaaS:}{19}{}%
-\contentsline {subsubsection}{Commerciali}{19}{}%
-\contentsline {subsubsection}{Open Source}{19}{}%
-\contentsline {section}{\numberline {6.3}Due viste}{19}{}%
-\contentsline {section}{\numberline {6.4}Business View}{20}{}%
-\contentsline {subsection}{\numberline {6.4.1}Business View: License}{20}{}%
-\contentsline {subsection}{\numberline {6.4.2}Business View: Installazione}{20}{}%
-\contentsline {subsection}{\numberline {6.4.3}Business View: Source Code}{21}{}%
-\contentsline {subsection}{\numberline {6.4.4}Business view: Interface}{21}{}%
-\contentsline {subsection}{\numberline {6.4.5}Business view: Community}{22}{}%
-\contentsline {subsection}{\numberline {6.4.6}Business view: Documentation}{22}{}%
-\contentsline {section}{\numberline {6.5}Technical View}{23}{}%
-\contentsline {subsection}{\numberline {6.5.1}Technical view: Development}{23}{}%
-\contentsline {subsection}{\numberline {6.5.2}Technical view: Versioning}{23}{}%
-\contentsline {subsection}{\numberline {6.5.3}Technical view: Function Orchestration}{24}{}%
-\contentsline {subsection}{\numberline {6.5.4}Technical view: Testing \& debugging}{24}{}%
-\contentsline {subsection}{\numberline {6.5.5}Technical view: Observability}{25}{}%
-\contentsline {subsection}{\numberline {6.5.6}Technical view: Application Delivery}{25}{}%
-\contentsline {subsection}{\numberline {6.5.7}Technical view: Application Delivery}{26}{}%
-\contentsline {subsection}{\numberline {6.5.8}Technical view: Application Delivery}{26}{}%
-\contentsline {subsection}{\numberline {6.5.9}Technical view: Code Reuse}{26}{}%
-\contentsline {subsection}{\numberline {6.5.10}Technical view: Access Management}{26}{}%
-\contentsline {section}{\numberline {6.6}FaaS Market}{27}{}%
-\contentsline {chapter}{\numberline {7}Software sostenibile}{28}{}%
-\contentsline {section}{\numberline {7.1}Nozioni di base}{28}{}%
-\contentsline {paragraph}{Impronta ecologica massima consentita secondo l’accordo?}{28}{}%
-\contentsline {paragraph}{Quanta CO2 produce un cittadino europeo ogni anno?}{28}{}%
-\contentsline {paragraph}{Quanto CO2 produce l’invio di una mail?}{28}{}%
-\contentsline {paragraph}{Quanta CO2 produce una ricerca sul web?}{28}{}%
-\contentsline {paragraph}{Ingegnere del software}{28}{}%
-\contentsline {section}{\numberline {7.2}Triangolo di ferro}{29}{}%
-\contentsline {paragraph}{}{29}{}%
-\contentsline {section}{\numberline {7.3}Il modello Greensoft}{29}{}%
-\contentsline {paragraph}{}{29}{}%
-\contentsline {section}{\numberline {7.4}Ruoli e collaborazione}{29}{}%
-\contentsline {section}{\numberline {7.5}Caso di studio}{30}{}%
-\contentsline {subsection}{\numberline {7.5.1}Architetto}{30}{}%
+\contentsline {subsection}{\numberline {3.1.3}Runtime}{12}{}%
+\contentsline {subsection}{\numberline {3.1.4}Esempio}{12}{}%
+\contentsline {subsection}{\numberline {3.1.5}Add-ons}{12}{}%
+\contentsline {paragraph}{}{12}{}%
+\contentsline {section}{\numberline {3.2}Altri PaaS}{12}{}%
+\contentsline {chapter}{\numberline {4}Modelli di Business}{13}{}%
+\contentsline {paragraph}{}{13}{}%
+\contentsline {section}{\numberline {4.1}Business innovation}{13}{}%
+\contentsline {part}{II\hspace {1em}Green Computing}{15}{}%
+\contentsline {chapter}{\numberline {5}Introduzione}{16}{}%
+\contentsline {paragraph}{ICT è una minaccia per la sostenibilità ambientale?}{16}{}%
+\contentsline {paragraph}{Green Computing}{16}{}%
+\contentsline {section}{\numberline {5.1}Sprechi}{16}{}%
+\contentsline {section}{\numberline {5.2}Datacenters}{17}{}%
+\contentsline {section}{\numberline {5.3}Obsolescenza programmata}{17}{}%
+\contentsline {subsection}{\numberline {5.3.1}Cartello Phoebus}{17}{}%
+\contentsline {subsection}{\numberline {5.3.2}Obsolescenza percepita}{17}{}%
+\contentsline {section}{\numberline {5.4}Progettare dispositivi efficienti energeticamente}{17}{}%
+\contentsline {chapter}{\numberline {6}Faas (Function As A Service)}{19}{}%
+\contentsline {section}{\numberline {6.1}AWS Lambda}{19}{}%
+\contentsline {section}{\numberline {6.2}Tipi di FaaS:}{20}{}%
+\contentsline {subsubsection}{Commerciali}{20}{}%
+\contentsline {subsubsection}{Open Source}{20}{}%
+\contentsline {section}{\numberline {6.3}Due viste}{20}{}%
+\contentsline {section}{\numberline {6.4}Business View}{21}{}%
+\contentsline {subsection}{\numberline {6.4.1}Business View: License}{21}{}%
+\contentsline {subsection}{\numberline {6.4.2}Business View: Installazione}{21}{}%
+\contentsline {subsection}{\numberline {6.4.3}Business View: Source Code}{22}{}%
+\contentsline {subsection}{\numberline {6.4.4}Business view: Interface}{22}{}%
+\contentsline {subsection}{\numberline {6.4.5}Business view: Community}{23}{}%
+\contentsline {subsection}{\numberline {6.4.6}Business view: Documentation}{23}{}%
+\contentsline {section}{\numberline {6.5}Technical View}{24}{}%
+\contentsline {subsection}{\numberline {6.5.1}Technical view: Development}{24}{}%
+\contentsline {subsection}{\numberline {6.5.2}Technical view: Versioning}{24}{}%
+\contentsline {subsection}{\numberline {6.5.3}Technical view: Function Orchestration}{25}{}%
+\contentsline {subsection}{\numberline {6.5.4}Technical view: Testing \& debugging}{25}{}%
+\contentsline {subsection}{\numberline {6.5.5}Technical view: Observability}{26}{}%
+\contentsline {subsection}{\numberline {6.5.6}Technical view: Application Delivery}{26}{}%
+\contentsline {subsection}{\numberline {6.5.7}Technical view: Application Delivery}{27}{}%
+\contentsline {subsection}{\numberline {6.5.8}Technical view: Application Delivery}{27}{}%
+\contentsline {subsection}{\numberline {6.5.9}Technical view: Code Reuse}{27}{}%
+\contentsline {subsection}{\numberline {6.5.10}Technical view: Access Management}{27}{}%
+\contentsline {section}{\numberline {6.6}FaaS Market}{28}{}%
+\contentsline {chapter}{\numberline {7}Software sostenibile}{29}{}%
+\contentsline {section}{\numberline {7.1}Nozioni di base}{29}{}%
+\contentsline {paragraph}{Impronta ecologica massima consentita secondo l’accordo?}{29}{}%
+\contentsline {paragraph}{Quanta CO2 produce un cittadino europeo ogni anno?}{29}{}%
+\contentsline {paragraph}{Quanto CO2 produce l’invio di una mail?}{29}{}%
+\contentsline {paragraph}{Quanta CO2 produce una ricerca sul web?}{29}{}%
+\contentsline {paragraph}{Ingegnere del software}{29}{}%
+\contentsline {section}{\numberline {7.2}Triangolo di ferro}{30}{}%
 \contentsline {paragraph}{}{30}{}%
-\contentsline {subsection}{\numberline {7.5.2}Bin packing}{30}{}%
-\contentsline {subsection}{\numberline {7.5.3}CDN 101}{30}{}%
+\contentsline {section}{\numberline {7.3}Il modello Greensoft}{30}{}%
 \contentsline {paragraph}{}{30}{}%
-\contentsline {subsection}{\numberline {7.5.4}Scelte implementative}{31}{}%
-\contentsline {subsection}{\numberline {7.5.5}Scegliere un linguaggio}{31}{}%
+\contentsline {section}{\numberline {7.4}Ruoli e collaborazione}{30}{}%
+\contentsline {section}{\numberline {7.5}Caso di studio}{31}{}%
+\contentsline {subsection}{\numberline {7.5.1}Architetto}{31}{}%
 \contentsline {paragraph}{}{31}{}%
-\contentsline {subsection}{\numberline {7.5.6}Sviluppatore}{31}{}%
-\contentsline {subsection}{\numberline {7.5.7}Operatore}{32}{}%
+\contentsline {subsection}{\numberline {7.5.2}Bin packing}{31}{}%
+\contentsline {subsection}{\numberline {7.5.3}CDN 101}{31}{}%
+\contentsline {paragraph}{}{31}{}%
+\contentsline {subsection}{\numberline {7.5.4}Scelte implementative}{32}{}%
+\contentsline {subsection}{\numberline {7.5.5}Scegliere un linguaggio}{32}{}%
 \contentsline {paragraph}{}{32}{}%
-\contentsline {section}{\numberline {7.6}Quadro normativo}{32}{}%
-\contentsline {section}{\numberline {7.7}EU vs the World}{32}{}%
-\contentsline {paragraph}{}{32}{}%
-\contentsline {chapter}{\numberline {8}Microservizi}{33}{}%
+\contentsline {subsection}{\numberline {7.5.6}Sviluppatore}{32}{}%
+\contentsline {subsection}{\numberline {7.5.7}Operatore}{33}{}%
 \contentsline {paragraph}{}{33}{}%
-\contentsline {paragraph}{Svantaggi}{33}{}%
-\contentsline {section}{\numberline {8.1}Monoliti}{33}{}%
+\contentsline {section}{\numberline {7.6}Quadro normativo}{33}{}%
+\contentsline {section}{\numberline {7.7}EU vs the World}{33}{}%
 \contentsline {paragraph}{}{33}{}%
-\contentsline {section}{\numberline {8.2}Microservizi}{33}{}%
-\contentsline {subsection}{\numberline {8.2.1}Service-orientation}{33}{}%
-\contentsline {paragraph}{}{33}{}%
-\contentsline {subsection}{\numberline {8.2.2}Organizzare servizi intorno alle business capability}{34}{}%
-\contentsline {subsection}{\numberline {8.2.3}Decentralizzazione dei dati}{34}{}%
-\contentsline {subsection}{\numberline {8.2.4}Servizi sviluppabili indipendentemente}{34}{}%
-\contentsline {subsection}{\numberline {8.2.5}Servizi scalabili in orizzontale}{34}{}%
-\contentsline {subsection}{\numberline {8.2.6}Servizi resistenti agli errori}{35}{}%
-\contentsline {section}{\numberline {8.3}CAP Theorem}{35}{}%
-\contentsline {paragraph}{}{35}{}%
-\contentsline {subsection}{\numberline {8.3.1}Approccio Netflix}{35}{}%
-\contentsline {paragraph}{}{35}{}%
-\contentsline {section}{\numberline {8.4}Chaos monkey}{35}{}%
-\contentsline {paragraph}{}{35}{}%
-\contentsline {chapter}{\numberline {9}Kubernetes}{36}{}%
-\contentsline {section}{\numberline {9.1}Containers}{36}{}%
-\contentsline {section}{\numberline {9.2}Kubernetes (Container Orchestration)}{36}{}%
-\contentsline {section}{\numberline {9.3}Design principles: Dichiaratività}{37}{}%
-\contentsline {paragraph}{}{37}{}%
-\contentsline {paragraph}{Definiamo gli stati desiderati da una collezione di oggetti}{37}{}%
-\contentsline {section}{\numberline {9.4}Design principles: Distribuzione}{37}{}%
-\contentsline {paragraph}{}{37}{}%
-\contentsline {section}{\numberline {9.5}Design principles: Disaccoppiamento}{38}{}%
-\contentsline {section}{\numberline {9.6}Design principles: Strutture immutabili}{38}{}%
-\contentsline {section}{\numberline {9.7}K8s Objects}{39}{}%
-\contentsline {paragraph}{}{39}{}%
-\contentsline {subsection}{\numberline {9.7.1}K8s objects: Pod}{39}{}%
-\contentsline {paragraph}{}{39}{}%
-\contentsline {subsection}{\numberline {9.7.2}K8s objects: Deployment}{39}{}%
-\contentsline {paragraph}{}{39}{}%
-\contentsline {subsection}{\numberline {9.7.3}K8s objects: Service}{40}{}%
+\contentsline {chapter}{\numberline {8}Microservizi}{34}{}%
+\contentsline {paragraph}{}{34}{}%
+\contentsline {paragraph}{Svantaggi}{34}{}%
+\contentsline {section}{\numberline {8.1}Monoliti}{34}{}%
+\contentsline {paragraph}{}{34}{}%
+\contentsline {section}{\numberline {8.2}Microservizi}{34}{}%
+\contentsline {subsection}{\numberline {8.2.1}Service-orientation}{34}{}%
+\contentsline {paragraph}{}{34}{}%
+\contentsline {subsection}{\numberline {8.2.2}Organizzare servizi intorno alle business capability}{35}{}%
+\contentsline {subsection}{\numberline {8.2.3}Decentralizzazione dei dati}{35}{}%
+\contentsline {subsection}{\numberline {8.2.4}Servizi sviluppabili indipendentemente}{35}{}%
+\contentsline {subsection}{\numberline {8.2.5}Servizi scalabili in orizzontale}{35}{}%
+\contentsline {subsection}{\numberline {8.2.6}Servizi resistenti agli errori}{36}{}%
+\contentsline {section}{\numberline {8.3}CAP Theorem}{36}{}%
+\contentsline {paragraph}{}{36}{}%
+\contentsline {subsection}{\numberline {8.3.1}Approccio Netflix}{36}{}%
+\contentsline {paragraph}{}{36}{}%
+\contentsline {section}{\numberline {8.4}Chaos monkey}{36}{}%
+\contentsline {paragraph}{}{36}{}%
+\contentsline {chapter}{\numberline {9}Kubernetes}{37}{}%
+\contentsline {section}{\numberline {9.1}Containers}{37}{}%
+\contentsline {section}{\numberline {9.2}Kubernetes (Container Orchestration)}{37}{}%
+\contentsline {section}{\numberline {9.3}Design principles: Dichiaratività}{38}{}%
+\contentsline {paragraph}{}{38}{}%
+\contentsline {paragraph}{Definiamo gli stati desiderati da una collezione di oggetti}{38}{}%
+\contentsline {section}{\numberline {9.4}Design principles: Distribuzione}{38}{}%
+\contentsline {paragraph}{}{38}{}%
+\contentsline {section}{\numberline {9.5}Design principles: Disaccoppiamento}{39}{}%
+\contentsline {section}{\numberline {9.6}Design principles: Strutture immutabili}{39}{}%
+\contentsline {section}{\numberline {9.7}K8s Objects}{40}{}%
 \contentsline {paragraph}{}{40}{}%
-\contentsline {subsection}{\numberline {9.7.4}K8s objects: Ingress}{40}{}%
+\contentsline {subsection}{\numberline {9.7.1}K8s objects: Pod}{40}{}%
 \contentsline {paragraph}{}{40}{}%
-\contentsline {section}{\numberline {9.8}K8s Control plane}{40}{}%
+\contentsline {subsection}{\numberline {9.7.2}K8s objects: Deployment}{40}{}%
 \contentsline {paragraph}{}{40}{}%
-\contentsline {subsection}{\numberline {9.8.1}K8s Control plane: Master node}{41}{}%
+\contentsline {subsection}{\numberline {9.7.3}K8s objects: Service}{41}{}%
 \contentsline {paragraph}{}{41}{}%
+\contentsline {subsection}{\numberline {9.7.4}K8s objects: Ingress}{41}{}%
 \contentsline {paragraph}{}{41}{}%
-\contentsline {subsection}{\numberline {9.8.2}K8s Control plane: Worker node}{41}{}%
+\contentsline {section}{\numberline {9.8}K8s Control plane}{41}{}%
 \contentsline {paragraph}{}{41}{}%
-\contentsline {paragraph}{}{41}{}%
-\contentsline {section}{\numberline {9.9}Quando non usare K8s}{42}{}%
-\contentsline {section}{\numberline {9.10}K8s vs Docker Swarm}{42}{}%
+\contentsline {subsection}{\numberline {9.8.1}K8s Control plane: Master node}{42}{}%
+\contentsline {paragraph}{}{42}{}%
+\contentsline {paragraph}{}{42}{}%
+\contentsline {subsection}{\numberline {9.8.2}K8s Control plane: Worker node}{42}{}%
+\contentsline {paragraph}{}{42}{}%
+\contentsline {paragraph}{}{42}{}%
+\contentsline {section}{\numberline {9.9}Quando non usare K8s}{43}{}%
+\contentsline {section}{\numberline {9.10}K8s vs Docker Swarm}{43}{}%
+\contentsline {chapter}{\numberline {10}Datacenters}{44}{}%
+\contentsline {section}{\numberline {10.1}Google datacenter}{44}{}%
+\contentsline {section}{\numberline {10.2}Pisa datacenter}{44}{}%
+\contentsline {section}{\numberline {10.3}Metodi di raffreddamento}{44}{}%
+\contentsline {section}{\numberline {10.4}DCIM: Data Center Infrastructure Management}{45}{}%
+\contentsline {section}{\numberline {10.5}Cosa non fare in un datacenter}{45}{}%
+\contentsline {section}{\numberline {10.6}Checklist}{45}{}%
+\contentsline {section}{\numberline {10.7}BC/DR: Business Continuity e Disaster Recovery}{46}{}%
+\contentsline {section}{\numberline {10.8}Peggiori disastri nei datacenter}{46}{}%
+\contentsline {section}{\numberline {10.9}Hyperconvergence - Iperconvergenza}{47}{}%
+\contentsline {chapter}{\numberline {11}Internet of things}{48}{}%
+\contentsline {section}{\numberline {11.1}Data usage}{48}{}%
+\contentsline {section}{\numberline {11.2}Deployment models}{48}{}%
+\contentsline {section}{\numberline {11.3}Fog Computing}{49}{}%
+\contentsline {paragraph}{}{49}{}%
+\contentsline {section}{\numberline {11.4}Fog infrastructure}{49}{}%
