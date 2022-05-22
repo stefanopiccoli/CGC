@@ -682,4 +682,104 @@
             \centering
             \includegraphics[scale=0.35]{Immagini/K8svsDS.png}
           \end{figure}
+          \chapter{Datacenters}
+          \section{Google datacenter}
+          \begin{itemize}
+            \item Differenti livelli di sicurezza (badges, scanner biometrici)
+            \item Distribuzione elettrica sospesa
+            \item Armadi personalizzati
+            \item Tecnologia di raffreddamento (27 gradi)
+          \end{itemize}
+          \section{Pisa datacenter}
+          \begin{itemize}
+            \item 100 Gbit/sec DCI (DataCenter Interconnect)
+            \item No Single Point of Failure(SPOF): ridondanza a L3 e L2, collegamento fisico
+            \item Spine-leaf topology per il traffico Est-Ovest
+            \item San Piero datacenter: Raffreddamento adiabatico (PUE<1.3)
+          \end{itemize}
+          \section{Metodi di raffreddamento}
+          \begin{itemize}
+            \item \textbf{Evaporative coolers}: Più efficienti energeticamente dei sistemi a aria, richiedono grandi volumi di acqua e costi di mantenimento e trattamenti chimici
+            \item \textbf{Air coolers}: Difficile raffreddamento durante l'estate e ha una costosa struttura di supporto
+            \item \textbf{Adiabatic coolers}: Evaporative(periodi caldi) + Air(durante tutti gli altri periodi). Il sistema ad aria viene usato per circa l'85\% del tempo in un anno risparmiando il 90\% di acqua.
+          \end{itemize}
+          \section{DCIM: Data Center Infrastructure Management}
+          \begin{itemize}
+            \item Monitoraggio centralizzato di infrastrutture fisiche
+            \subitem $\circ$ Power 
+            \subitem $\circ$ Cooling 
+            \subitem $\circ$ Security 
+            \subitem $\circ$ Ambiente 
+            \item Genera report e grafici basati sull'utente
+            \item Notifica di errori istantanea consente una rapida risoluzione di eventi critici all'infrastruttura
+          \end{itemize}
+          \section{Cosa non fare in un datacenter}
+          \begin{itemize}
+            \item Grovigli di cavi, sono pericolosi
+            \item Introdurre cibi e bevande
+            \item Non avere documentazione dettagliata
+            \item Non prevenire problemi elettrici
+            \item Non tenere traccia degli accessi
+            \item Non prevedere incendi
+          \end{itemize}
+          \section{Checklist}
+          \begin{itemize}
+            \item Garantisce qualità delle operazioni, indipendentemente dall'operatore
+            \item Riduce la responsabilità degli impiegati
+          \end{itemize}
+          \section{BC/DR: Business Continuity e Disaster Recovery}
+          \begin{itemize}
+            \item Avere una copia dei tuoi dati più importanti fuori dall'ambiente di produzione (almeno 150 miglia)
+            \item Un piano non testato e un piano fallito: Testa il tuo BC/DR in modo realistico per garantirne il funzionamento
+            \item Assicurati che le modifiche alla produzione siano propriamente riflesse nel piano BC/DR
+            \item Avere un piano consiste e accessibile anche in eventi di maggiore disastro
+            \item Avere sempre professionisti allenati al piano BC/DR 
+            \item Murphy's law: Se qualcosa può andare storto, lo farà
+          \end{itemize}
+          \section{Peggiori disastri nei datacenter}
+          \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.30]{Immagini/Disastri.png}
+          \end{figure}
+          \clearpage
+          \section{Hyperconvergence - Iperconvergenza}
+          \begin{itemize}
+            \item Infrastrutture DC tradizionali 
+            \subitem $\circ$ Server, networking e storage separati 
+            \subitem $\circ$ Problemi: compatibilità dei componenti
+            \item Infrastrutture convergenti
+            \subitem $\circ$ Pre-testate, design validato
+            \subitem $\circ$ Strumenti avanzati di gestione
+            \item Iperconvergenze 
+            \subitem $\circ$ Combina server virtualizzati, networking e storage in un singolo box
+            \subitem $\circ$ Costi di hardware minimizzati e scalabilità
+            \subitem $\circ$ Non può aumentare storage senza aumentare il calcolo
+            \subitem $\circ$ Applicazioni DB non virtuali(No storage virtualizzato)
+            \subitem $\circ$ Software NON economico
+            \subitem $\circ$ \textbf{Nutanix} è stato nominato leader per iperconvergenza per il quinto anno di fila
+          \end{itemize}
+        \chapter{Internet of things}
+        \section{Data usage}
+        \begin{figure}[htbp]
+          \centering
+          \includegraphics[scale=0.3]{Immagini/DataUsage.png}
+        \end{figure}
+        \section{Deployment models}
+        \begin{figure}[htbp]
+          \centering
+          \includegraphics[scale=0.4]{Immagini/DeploymentModels.png}
+        \end{figure}
+        \section{Fog Computing}
+        \paragraph{}\textbf{Fog computing} mira ad estendere il cloud attraverso IoT per supportare meglio le applicazioni IoT \textbf{latency-sensitive} e \textbf{bandwidth-hungry}.
+        \section{Fog infrastructure}
+        \begin{figure}[htbp]
+          \centering
+          \includegraphics[scale=0.5]{Immagini/FogInfrastructure.png}
+        \end{figure}
+        \begin{itemize}
+          \item Hardware, software, IoT capabilities
+          \item Costi
+          \item Disponibilità dei nodi
+          \item $PUE=\frac{E_{IT}+E_{non-IT}}{E_{IT}}$
+        \end{itemize}
 \end{document}
