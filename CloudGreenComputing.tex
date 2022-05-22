@@ -58,7 +58,7 @@
       \section{Amazon Elastic Block Store (EBS)}
       \begin{itemize}
         \item Blocco persistente di archiviazione di volumi di memoria usato con le istanze di Amazon EC2
-        \item Ogni volume di Amazon EBS viene automaticamente replicato senza la sua Aviabilty Zone in modo da offrire alta disponibilità e durata. 
+        \item Ogni volume di Amazon EBS viene automaticamente replicato senza la sua Availability Zone in modo da offrire alta disponibilità e durata. 
       \end{itemize}
       \section{Dropbox exodus}
         \begin{itemize}
@@ -67,15 +67,15 @@
         \end{itemize}
         \subsection{L'esodo}
         \begin{itemize}
-          \item Hardware propietario che archivierà petabyte di dati
+          \item Hardware proprietario che archivierà petabyte di dati
           \item Nuovo codice ("Magic Pocket")
           \item Installare 50 rack di hardware al giorno
           \item Completare lo spostamento prima della scadenza del contratto con Amazon per evitare un rinnovo
         \end{itemize}
         \subsection{Conclusioni}
-        \paragraph{}Dropbox è riuscita a completare lo spostamento con successo entro i tempi previsiti.
+        \paragraph{}Dropbox è riuscita a completare lo spostamento con successo entro i tempi previsti.
     \chapter{Container}
-    \paragraph{}I \textbf{containers} sono un meccanismo di virtualizzazione differente dalle Virtual Machines poichè 
+    \paragraph{}I \textbf{containers} sono un meccanismo di virtualizzazione differente dalle Virtual Machines poiché 
     permetto di avere più istanze \textbf{isolate} e \textbf{volatili} che scompaiono quando interrotte.\\
     I containers sono \textbf{leggeri}, \textbf{veloci}, più \textbf{semplici da buildare} ma \textbf{meno sicuri} delle Virtual Machines.
     \section{Docker}
@@ -90,7 +90,7 @@
     \end{itemize}
     \subsection{Componenti}
     \begin{itemize}
-      \item \textbf{Docker Engine}: permette di creare e mandare in esecuziuone container
+      \item \textbf{Docker Engine}: permette di creare e mandare in esecuzione container
       \item \textbf{Docker Hub}: repository enorme che contiene molte immagini di container
       \item \textbf{Docker Swarm Mode}: permette di eseguire un container su più docker host e divide gli swarm node in manager e worker, permettendo una \textbf{gestione dichiarativa} della nostra \textbf{applicazione}
       \item \textbf{Images}: \textbf{template di sola lettura} usati per creare container, registrate in registry
@@ -200,12 +200,14 @@
     \end{itemize}
       \section{Sprechi}
       \begin{itemize}
-        \item 1,800 kg di materiale grezzo per produrre un personal computer
+        \item 1,800 kg di materiale grezzo per produrre un personal computer (Rinoceronte)
         \item ICT contribuisce al 9\% di consumo elettrico in Europa 
         \item ICT contribuisce al 4\% di emissioni di carbonio in Europa
+        \item Produce il 2\% delle emissioni di CO2 globali (carburante aereo)
         \item È previsto ulteriore aumento nei prossimi anni (esponenzialmente nel networking 20,9\%) 
-        \item 50 milioni di tonnellate all'anno di e-waste
+        \item 50 milioni di tonnellate all'anno di e-waste (770 milioni di lavatrici)
         \item Il traffico di e-waste ha un traffico monetario illegale maggiore del traffico di droga
+        \item  I data centre potranno arrivare al 28\% della domanda energetica per ICT.
       \end{itemize}
       \section{Datacenters}
       \begin{itemize}
@@ -220,4 +222,395 @@
       1000 ore invece di 2500 ore, anche se erano tutti in grado di produrre lampadine più longeve.
       \subsection{Obsolescenza percepita}
       Il cliente è convinto di aver bisogno di un prodotto aggiornato, anche se effettivamente quello attuale è perfettamente funzionante.
+      \section{Progettare dispositivi efficienti energeticamente}
+        \begin{itemize}
+          \item Minimizzare processi di comunicazione, interazioni GUI-user
+          \item Eliminare controlli non necessari
+          \item Scegliere linguaggi di programmazione adatti
+          \item Minimizzare movimenti di dati, usare efficacemente il caching
+        \end{itemize}
+    \chapter{Faas (Function As A Service)}
+        \section{AWS Lambda}
+          \begin{itemize}
+            \item Eseguire codice senza fornire o gestire server, senza preoccuparsi dell'amministrazione
+            \item Si occupa di scalare ed eseguire e patchare il codice
+            \item È possibile impostare il codice in modo da attivarsi attraverso altri servizi AWS
+            \item Pagamento solo per il tempo di calcolo
+          \end{itemize}
+        \clearpage
+          \section{Tipi di FaaS:}
+          \subsubsection{Commerciali}
+          \begin{itemize}
+            \item AWS Lambda
+            \item Google Cloud Functions
+            \item MS Azure Functions
+          \end{itemize}
+          \subsubsection{Open Source}
+          \begin{itemize}
+            \item Apache Openwhisk
+            \item Fission
+            \item Fn
+            \item Knative
+            \item Kubeless
+            \item Nuclio
+            \item OpenFaaS
+          \end{itemize}
+          \section{Due viste}
+          \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.3]{Immagini/TwoViews.png}
+          \end{figure}
+          \section{Business View}
+          \subsection{Business View: License}
+            \begin{itemize}
+              \item Opens Source: License permissive con Apache 2.0
+              \item Commerciali: License proprietarie
+              \item MS Azure Functions: anche progetti open sources
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.4]{Immagini/License.png}
+            \end{figure}
+            \subsection{Business View: Installazione}
+            \begin{itemize}
+              \item Commerciali: Solo Azure ha alcune parti installabili in locale
+              \item Piattaforme installabili supportano piu host, Kubernetes è il più supportato
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.4]{Immagini/Installation.png}
+            \end{figure}
+            \clearpage
+            \subsection{Business View: Source Code}
+            \begin{itemize}
+              \item Commerciali: MS Azure Function è l'unica parzialmente open source
+              \item Open Source: Hostate su GitHub e implementate maggiormente in Go
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.4]{Immagini/SourceCode.png}
+            \end{figure}
+            \subsection{Business view: Interface}
+            \begin{itemize}
+              \item Tutte le piattaforme forniscono CLI
+              \item API e GUI non sempre fornite
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.35]{Immagini/Interface.png}
+            \end{figure}
+            \clearpage
+            \subsection{Business view: Community}
+            \begin{itemize}
+              \item OpenFaaS, Apache Openwhisk e Knative hanno la valutazione più alta su GitHub in stelle, contributors e commits rispettivamente
+              \item Stackoverflow mostra un drastica differenza tra commerciali e open sources
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.3]{Immagini/Community.png}
+            \end{figure}
+            \subsection{Business view: Documentation}
+            \begin{itemize}
+              \item Tutte le piattaforme forniscono deployment dell'applicazione e documentazione d'uso della piattaforma 
+              \item Platform development e architettura non sono sempre documentate in piattaforme open sources
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.3]{Immagini/Documentation.png}
+            \end{figure}
+            \clearpage
+            \section{Technical View}
+            \subsection{Technical view: Development}
+            \begin{itemize}
+              \item Java, Node.js e Python sono i piu supportati runtimes, Docker è inoltre popolare per personalizzazione runtime. 
+              \item IDEs e text editor sono principalmente offerti dalle piattaforme \textbf{commerciali}.
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.35]{Immagini/Development.png}
+            \end{figure}
+            \subsection{Technical view: Versioning}
+            \begin{itemize}
+              \item Open source: versioning implicito
+              \item Commerciali: versioning dedicato
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.5]{Immagini/Versioing.png}
+            \end{figure}
+            \subsection{Technical view: Function Orchestration}
+            \begin{itemize}
+              \item Tutte le piattaforme supportano invocazioni di funzioni HTTP-based \textbf{sincrone}, le \textbf{asincrone} invece da poche piattaforme
+              \item Piu della metà delle piattaforme open source non supporta data store event sources
+              \item Scheduler, stream processing platforms e messaging sono supportate dalla maggior parte delle piattaforme
+              \item Più di metà delle piattaforme permette di integrare sorgenti di eventi custom
+            \end{itemize}
+            \begin{itemize}
+              \item Più della metà dei FaaS supporta function orchestration usando altre DSLs o orchestrating functions.
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.4]{Immagini/FunctionOrchestration.png}
+            \end{figure}
+            \subsection{Technical view: Testing \& debugging}
+            \begin{itemize}
+              \item La maggior parte delle piattaforme viste supporta testing funzionale e debug delle funzioni
+              \item Commerciali: offrono operazioni più sofisticate
+              \item Open Sources: test calls e log-based debugging
+            \end{itemize}
+            \clearpage
+            \subsection{Technical view: Observability}
+            \begin{itemize}
+              \item Commerciali: tool dedicati al monitoraggio e logging
+              \item Open source: richiedono integrazione di tool di terze parti
+            \end{itemize}
+            \begin{itemize}
+              \item Più della metà dei FaaS supporta function orchestration usando altre DSLs o orchestrating functions.
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.3]{Immagini/Observability.png}
+            \end{figure}
+            \subsection{Technical view: Application Delivery}
+            \begin{itemize}
+              \item La maggior parte delle piattaforme segue un approccio dichiarativo al deployment automatico delle applicazioni
+              \item Commerciali: supportano nativamente CI/CD tool
+              \item Open sources: Solo OpenFaaS integra CI/CD, le altre no
+            \end{itemize}
+            \begin{itemize}
+              \item Più della metà dei FaaS supporta function orchestration usando altre DSLs o orchestrating functions.
+            \end{itemize}
+            \begin{figure}[h]
+              \centering
+              \includegraphics[scale=0.3]{Immagini/ApplicationDelivery.png}
+            \end{figure}
+            \subsection{Technical view: Application Delivery}
+            \begin{itemize}
+              \item La maggior parte delle piattaforme segue un approccio dichiarativo al deployment automatico delle applicazioni
+              \item Commerciali: supportano nativamente CI/CD tool
+              \item Open sources: Solo OpenFaaS integra CI/CD, le altre no
+            \end{itemize}
+            \begin{itemize}
+              \item Solo AWS Lambda e MS Azure Functions sono affiliati a un function marketplace
+            \end{itemize}
+            \subsection{Technical view: Application Delivery}
+            \begin{itemize}
+              \item La maggior parte delle piattaforme segue un approccio dichiarativo al deployment automatico delle applicazioni
+              \item Commerciali: supportano nativamente CI/CD tool
+              \item Open sources: Solo OpenFaaS integra CI/CD, le altre no
+            \end{itemize}
+            \subsection{Technical view: Code Reuse}
+            \begin{itemize}
+              \item Solo AWS Lambda e MS Azure Functions sono affiliati a un function marketplace
+            \end{itemize}
+            \subsection{Technical view: Access Management}
+            \begin{itemize}
+              \item Commerciali: supportano nativamente autenticazione e controllo di accesso alle risorse 
+              \item Open Source: usano funzioni offerte dal ambiente di hosting per garantire autenticazione e accesso alle risorse
+            \end{itemize}
+            \clearpage
+            \section{FaaS Market}
+            \begin{figure}[htbp]
+              \centering
+              \includegraphics[scale=0.5]{Immagini/FaasMarket.png}
+              \includegraphics[scale=0.5]{Immagini/FaasMarket2.png}
+            \end{figure}
+      \chapter{Software sostenibile}
+          \section{Nozioni di base}
+          Efficienza: $$\varepsilon = \frac{\text{num.calcoli}}{\text{elettricità}}$$
+          $\text{Efficienza} \neq \text{Correttezza}$\\[5px]
+          \textbf{Sostenibilità}: Lo sviluppo sostenibile è lo sviluppo in grado di soddisfare i bisogni
+          del presente senza compromettere la possibilità delle future
+          generazioni di soddisfare i propri.
+          \paragraph{Impronta ecologica massima consentita secondo l’accordo?} 2000 kg CO2 annui per persona.
+          \paragraph{Quanta CO2 produce un cittadino europeo ogni anno?} 10000 kg.
+          \paragraph{Quanto CO2 produce l’invio di una mail?} 20 g.
+          \paragraph{Quanta CO2 produce una ricerca sul web?} 1 g.
+          \paragraph{Ingegnere del software} Persona che applica i principi dell'ingegneria del software per progettare, sviluppare, mantenere,
+          testare e valutare il software informatico.
+          \section{Triangolo di ferro}
+          \paragraph{}Gli ingegneri del software devono perseguire questi obiettivi contrastanti continuamente: \textbf{costo}, \textbf{tempo}, \textbf{qualità}.
+          \section{Il modello Greensoft}
+          \paragraph{}Il modello \textbf{Greensoft} è un modello olistico per lo sviluppo, utilizzo e dismissione di software sostenibile.
+          \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.4]{Immagini/Greensoft.png}
+          \end{figure}
+          \section{Ruoli e collaborazione}
+          \begin{itemize}
+            \item Diversi ruoli possono essere ricoperti da una stessa persona
+            \item Ruoli ricoperti da persone diverse necessitano collaborazione tra queste
+            \item \textbf{DevOps fonde i ruoli di sviluppatore, operatore e architetto}
+          \end{itemize}
+          \section{Caso di studio}
+          \subsection{Architetto}
+          \paragraph{}Gli \textbf{architetti} sono coloro che determinano i requisiti funzionali e non-funzionali del sistema e che progettano le interazioni tra componenti.
+          \begin{itemize}
+            \item Possono includere la sostenibilità nei requisiti non-funzionali:
+            \subitem $\circ$ \textbf{Scalabilità}: possibilità di adattare il sistema alla domanda
+            \subitem $\circ$ \textbf{Performance}: tempo di risposta nel Service Level Agreement
+            \item Come?
+            \subitem $\circ$ scomponendo i servizi in \textbf{unità scalabili} (per risorsa: calcolo, rete, storage)
+            \subitem $\circ$ rendere possibile un \textbf{bin packing} ottimo sull'utilizzo delle risorse di calcolo
+          \end{itemize}
+          \subsection{Bin packing}
+          \begin{itemize}
+            \item Problema difficile: \textbf{NP-hard}
+            \item Corrisponde a minimizzare il numero di server per far girare i servizi che compongono il sistema
+            \item L’architetto può disegnare componenti più piccole che consentono di risolvere il problema del bin packing evitando frammentazione
+            \item La soluzione del problema verrà poi delegata a livelli più bassi gestiti da altri ruoli 
+          \end{itemize}
+          \subsection{CDN 101}
+          \paragraph{}Mantenere i dati in punti di presenza locali:
+          \begin{itemize}
+            \item Minor distanza per raggiungere i dispositivi dei clienti
+            \item Minore utilizzo di banda
+            \item Miglior utilizzo della rete, mantenendo contenuti popolari in cache
+          \end{itemize}
+          \subsection{Scelte implementative}
+          \begin{itemize}
+            \item Implementare servizi che richiedano un quantitativo ragionevole di risorse anche per favorire \textbf{bin packing}
+            \item Disaccoppiare implementazione da infrastruttura in modo da facilitare la migrazione a Cloud provider differenti
+          \end{itemize}
+          \subsection{Scegliere un linguaggio}
+          \paragraph{}Trovare un bilanciamento tra \textbf{energia consumata}, \textbf{tempo di esecuzione} e \textbf{memoria utilizzata}.
+          \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.5]{Immagini/Linguaggi.png}
+          \end{figure}
+          \subsection{Sviluppatore}
+          \begin{itemize}
+            \item Può cercare di ottimizzare l'efficienza del software 
+            \item Disaccoppiare applicazione da dettagli sull'infrastruttura
+            \item Ridurre lo spreco di risorse durante lo sviluppo
+          \end{itemize}
+          \subsection{Operatore}
+          \paragraph{}Coloro che gestiscono l’infrastruttura e garantiscono la disponibilità dell’applicazione
+          \begin{itemize}
+            \item Offrono risorse infrastrutturali adeguate a garantire le performance desiderate
+            \item Utilizzano al meglio le risorse per contenere i costi e favorire la sostenibilità
+            \item Garantiscono backup e ripristino
+            \item Implementano logs e monitoraggio
+            \item Ottimizzare l’uso delle risorse
+            \item Fare scelte infrastrutturali che garantiscano performance e facilitino il bin packing
+          \end{itemize}
+          \section{Quadro normativo}
+          \begin{itemize}
+            \item Le leggi e i regolamenti possono favorire una transizione sostenibile
+            \item Le emissioni dovute al ciclo di vita di un software sono una esternalità negativa
+            \item E’ un costo indiretto che viene pagato da terzi non coinvolti nel ciclo di vita di quel software
+            \item Le leggi possono tassare le esternalità negative 
+            \item Le leggi possono obbligare alla trasparenza per creare consapevolezza tra i clienti
+          \end{itemize}
+          \section{EU vs the World}
+          \paragraph{}L’Unione Europea ha definito una direttiva su «Corporate sustainability reporting», all’interno del Green Deal europeo.
+          \begin{itemize}
+            \item Obbliga le aziende a relazionare sulla sostenibilità ambientale, sarà in vigore dal 2023.
+          \end{itemize}
+      \chapter{Microservizi}
+          \paragraph{}Un \textbf{microservizio} ha l'obiettivo di accorciare il \textit{lead time} per nuove funzionalità e aggiornamenti. 
+          \begin{itemize}
+            \item Accelera il rebuild e il redeployment
+            \item Riduce corde fra silos funzionali (vari gruppi di un'azienda)
+            \item Riuscire a scalare efficacemente
+          \end{itemize}
+          \paragraph{Svantaggi}
+          \begin{itemize}
+            \item Eccesso di comunicazione
+            \item Complessità
+            \item Difficoltà nell'evitare duplicazione dei dati 
+          \end{itemize}
+          \section{Monoliti}
+          \paragraph{}Per \textbf{monolite} si intende la tipica applicazione di un'azienda il quale cambiamento di una piccola parte richiede
+          il \textbf{rebuilding} e il \textbf{redeployment} dell'intero monolite. Inoltre lo \textbf{scaling} è richiesto per l'intera applicazione.
+          \section{Microservizi}
+          \subsection{Service-orientation}
+            \paragraph{}Sviluppare un'applicazione come un insieme di servizi
+            \begin{itemize}
+              \item Ogni servizio è eseguito in container separati
+              \item Comunicazione con meccanismi leggeri (HTTP request-response e code asincrone per disaccoppiamento)
+              \item Poliglotta (linguaggi diversi)
+            \end{itemize}
+          \subsection{Organizzare servizi intorno alle business capability}
+            \begin{itemize}
+              \item Cross-functional team
+            \end{itemize}
+          \subsection{Decentralizzazione dei dati}
+          \begin{itemize}
+            \item Ogni servizio ha un suo database
+            \item Eventual consistency e compensation invece di transazioni distribuite
+          \end{itemize}
+          \subsection{Servizi sviluppabili indipendentemente}
+          \begin{itemize}
+            \item Possibilità di modificare il servizio senza necessariamente cambiare gli altri servizi
+          \end{itemize}
+          \subsection{Servizi scalabili in orizzontale}
+          \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.3]{Immagini/HScaling.png}
+            \includegraphics[scale=0.3]{Immagini/HVScaling.png}
+          \end{figure}
+          \subsection{Servizi resistenti agli errori}
+          \begin{itemize}
+            \item Tolleranza agli errori è un requisito
+            \item Ogni chiamata di servizio può fallire 
+            \item Chiamate sincrone tra servizi possono indurre a problemi di downtime
+          \end{itemize}
+        \section{CAP Theorem}
+        \paragraph{}In presenza di una \textbf{partizione} di rete, non puoi avere sia \textbf{accessibilità} che \textbf{consistenza}.
+        \subsection{Approccio Netflix}
+        \paragraph{}Per replicare i dati in \textit{n} nodi Netflix:
+        \begin{itemize}
+          \item Scrive dove è momentaneamente possibile, poi sistema le mancanze
+          \item Usa il quorum: (n/2+1) devono rispondere
+        \end{itemize}
+        \section{Chaos monkey}
+        \paragraph{}Il metodo \textbf{chaos monkey} termina casualmente istanze e container che vengono eseguiti all'interno dell'ambiente di produzione
+      \chapter{Kubernetes}
+        \section{Containers}
+        \begin{itemize}
+          \item I container forniscono un meccanismo leggero per isolare lo sviluppo di un'applicazione. 
+          \item I container immagini possono essere eseguiti in modo affidabile su ogni macchina, fornendoci la portabilità dallo sviluppo all'implementazione.
+          \item Più carichi di lavoro possono essere piazzati sulla stessa macchina fisica, raggiungendo elevati utilizzi di memoria e CPU
+        \end{itemize}
+        \section{A container orchestration platform}
+          \paragraph{} k8(Kubernetes) gestisce l'intero ciclo dei singoli container, avvia o spegne le risorse in base alla necessità.\\
+          Fornisce un meccanismo alle applicazioni per comunicare tra loro anche quando i container sottostanti vengono creati e distrutti.\\
+          Dato un set di container workloads da eseguire e un set di macchine in un cluster, il container orchestrator esamina tutti i container e determina la macchina ottimale a cui assegnare quel workload.       
+        \clearpage
+          \section{Design principles: dichiarabilità}
+          \paragraph{} K8s troverà quando l'attuale stato del sistema non rispetta le nostre aspettative e interverrà per fixare il problema, facendo diventare il nostro sistema "self-healing".
+          \paragraph{Definiamo gli stati desiderati da una collezione di oggetti}
+          \begin{itemize}
+            \item tutti gli oggetti hanno una specifica nella quale inseriamo lo stato desiderato e uno stato che riflette lo stato attuale dell'oggetto.
+            \item Esegue costantemente domande a ogni oggetto per assicurarsi che il suo stato sia uguale alle specifiche.
+            \subitem{$\circ$} Se un oggetto non risponde, K8 avvia una nuova versione per sostituirlo.
+            \subitem{$\circ$} Se un oggetto si è allontano dalle specifiche, k8s emette i comandi necessari per riportare l'oggetto allo stato desiderato.
+          \end{itemize}
+          \section{Design principles: distribuzione}
+          \paragraph{}K8s fornisce una interfaccia unificata per interagire con un cluster di macchine. Non ci dobbiamo preoccupare della comunicazione tra le singole macchine.
+          \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.4]{Immagini/k8distribuzione.png}
+          \end{figure}
+          \clearpage
+          \section{Design principles: disaccoppiamento}
+          \paragraph{}I container dovrebbero essere sviluppati avendo un solo obiettivo in mente (microservice-based architecture)\\
+          K8s supporta nativamente l'idea di disaccoppiare i servizi che possono essere scalabili e aggiornati indipendentemente.
+          \section{Design principles: strutture immutabili}
+          \paragraph{}Per ottenere il massimo dai container e dall'orchestratore, dovremmo implementare una struttura immutabile.\\
+          Durante il ciclo di vita di un progetto dovremmo usare lo stesso container immagine (e cambiare solo le configurazioni esterne all'imagine).
+          I container sono disegnati per essere effimeri, pronti per essere rimpiazzati da altri container in qualsiasi momento.\\
+          Mantenendo la struttura immutata rendiamo più facile il roll back delle applicazioni allo stato precedente. Possiamo semplicemente aggiornare la nostra configurazione per usare un vecchio container immagine. 
+          \section{K8s oggetti}
+          \paragraph{}Gli oggetti di K8s possono essere definiti in \textbf{manifesti}
+          \subsection{K8s: pod}
+          \paragraph{}Un pod consiste in 
+            \begin{itemize}
+              \item uno o più relazionati container
+              \item un livello di rete condiviso
+              \item un volume di filesystem condiviso
+            \end{itemize}
+          \subsection{K8s: deployment}
+          \paragraph{} 
 \end{document}
