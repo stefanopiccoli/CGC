@@ -569,48 +569,117 @@
       \chapter{Kubernetes}
         \section{Containers}
         \begin{itemize}
-          \item I container forniscono un meccanismo leggero per isolare lo sviluppo di un'applicazione. 
-          \item I container immagini possono essere eseguiti in modo affidabile su ogni macchina, fornendoci la portabilità dallo sviluppo all'implementazione.
+          \item I container forniscono un meccanismo leggero per isolare lo l'ambiente di un'applicazione
+          \item Le immagini dei container possono essere eseguiti in modo affidabile su ogni macchina, fornendoci la portabilità dallo sviluppo al deployment
           \item Più carichi di lavoro possono essere piazzati sulla stessa macchina fisica, raggiungendo elevati utilizzi di memoria e CPU
         \end{itemize}
-        \section{A container orchestration platform}
-          \paragraph{} k8(Kubernetes) gestisce l'intero ciclo dei singoli container, avvia o spegne le risorse in base alla necessità.\\
-          Fornisce un meccanismo alle applicazioni per comunicare tra loro anche quando i container sottostanti vengono creati e distrutti.\\
-          Dato un set di container workloads da eseguire e un set di macchine in un cluster, il container orchestrator esamina tutti i container e determina la macchina ottimale a cui assegnare quel workload.       
+        \section{Kubernetes (Container Orchestration)}
+          \begin{itemize}
+            \item Gestisce l'intero ciclo di vita dei singoli container, \textbf{avviando o spegnendo le risorse in base alla necessità}.
+            Se un container si spegne inaspettatamente K8 ne lancia un altro al suo posto.
+            \item Fornisce un \textbf{meccanismo} alle applicazioni per \textbf{comunicare tra loro} anche quando i container sottostanti vengono creati e distrutti.
+            \item Dato un gruppo di carichi di lavoro per container da eseguire e un insieme di macchine su un cluster, esamina ogni container e \textbf{determina la macchina ottimale
+                  a cui schedulare il carico di lavoro}
+          \end{itemize} 
         \clearpage
-          \section{Design principles: dichiarabilità}
-          \paragraph{} K8s troverà quando l'attuale stato del sistema non rispetta le nostre aspettative e interverrà per fixare il problema, facendo diventare il nostro sistema "self-healing".
+          \section{Design principles: Dichiaratività}
+          \paragraph{} K8s troverà quando l'attuale stato del sistema non rispetta le nostre aspettative e interverrà per sistemare il problema (\textbf{self-healing}).
           \paragraph{Definiamo gli stati desiderati da una collezione di oggetti}
           \begin{itemize}
-            \item tutti gli oggetti hanno una specifica nella quale inseriamo lo stato desiderato e uno stato che riflette lo stato attuale dell'oggetto.
-            \item Esegue costantemente domande a ogni oggetto per assicurarsi che il suo stato sia uguale alle specifiche.
-            \subitem{$\circ$} Se un oggetto non risponde, K8 avvia una nuova versione per sostituirlo.
-            \subitem{$\circ$} Se un oggetto si è allontano dalle specifiche, k8s emette i comandi necessari per riportare l'oggetto allo stato desiderato.
+            \item Ogni oggetto ha una specifica nella quale forniamo lo stato desiderato e uno stato che riflette lo stato corrente dell'oggetto
+            \item K8 esegue costantemente domande a ogni oggetto per assicurarsi che il suo stato sia uguale alla specifica
+            \subitem{$\circ$} Se un oggetto non risponde, K8 avvia una nuova versione per sostituirlo
+            \subitem{$\circ$} Se un oggetto si è allontano dalle specifiche, K8 emette i comandi necessari per riportare l'oggetto allo stato desiderato
           \end{itemize}
-          \section{Design principles: distribuzione}
+          \section{Design principles: Distribuzione}
           \paragraph{}K8s fornisce una interfaccia unificata per interagire con un cluster di macchine. Non ci dobbiamo preoccupare della comunicazione tra le singole macchine.
           \begin{figure}[htbp]
             \centering
             \includegraphics[scale=0.4]{Immagini/k8distribuzione.png}
           \end{figure}
           \clearpage
-          \section{Design principles: disaccoppiamento}
-          \paragraph{}I container dovrebbero essere sviluppati avendo un solo obiettivo in mente (microservice-based architecture)\\
-          K8s supporta nativamente l'idea di disaccoppiare i servizi che possono essere scalabili e aggiornati indipendentemente.
-          \section{Design principles: strutture immutabili}
-          \paragraph{}Per ottenere il massimo dai container e dall'orchestratore, dovremmo implementare una struttura immutabile.\\
-          Durante il ciclo di vita di un progetto dovremmo usare lo stesso container immagine (e cambiare solo le configurazioni esterne all'imagine).
-          I container sono disegnati per essere effimeri, pronti per essere rimpiazzati da altri container in qualsiasi momento.\\
-          Mantenendo la struttura immutata rendiamo più facile il roll back delle applicazioni allo stato precedente. Possiamo semplicemente aggiornare la nostra configurazione per usare un vecchio container immagine. 
-          \section{K8s oggetti}
-          \paragraph{}Gli oggetti di K8s possono essere definiti in \textbf{manifesti}
-          \subsection{K8s: pod}
-          \paragraph{}Un pod consiste in 
+          \section{Design principles: Disaccoppiamento}
+          \begin{itemize}
+            \item I container dovrebbero essere sviluppati avendo un solo obiettivo in mente (\textbf{microservice-based architecture})
+            \item K8s supporta nativamente l'idea di disaccoppiare i \textbf{servizi} che possono essere \textbf{scalati e aggiornati indipendentemente}
+          \end{itemize} 
+          \section{Design principles: Strutture immutabili}
+          \begin{itemize}
+            \item Per ottenere il massimo dai container e dall'orchestrazione, dovremmo distribuire una \textbf{struttura immutabile}
+            \item Durante il ciclo di vita di un progetto dovremmo \textbf{usare la stessa immagine per il container} (e modificare solo le configurazioni esterne all'immagine)
+            \item I container sono progettati per essere \textbf{effimeri}, \textbf{pronti per essere rimpiazzati da altri container} in qualsiasi momento
+            \item Mantenendo la struttura immutata rendiamo più facile il \textbf{roll back} delle applicazioni \textbf{a stati precedenti}, possiamo semplicemente aggiornare la nostra configurazione per usare una vecchia immagine del container.
+          \end{itemize}
+          \clearpage
+          \section{K8s Objects}
+          \paragraph{}Gli oggetti di K8s possono essere definiti in \textbf{manifesti} (YAML o JSON).
+          \subsection{K8s objects: Pod}
+          \paragraph{}Un \textbf{Pod} consiste in 
             \begin{itemize}
-              \item uno o più relazionati container
+              \item uno o più container strettamente in relazione
               \item un livello di rete condiviso
               \item un volume di filesystem condiviso
             \end{itemize}
-          \subsection{K8s: deployment}
-          \paragraph{} 
+          \subsection{K8s objects: Deployment}
+          \paragraph{}Un \textbf{deployment} object include una collezione di \textbf{Pods} definiti da un template e il numero di copie del template che si vogliono eseguire.
+          Il cluster proverà sempre ad avere n Pods disponibili.
+          \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.5]{Immagini/Deployment.png}
+          \end{figure}
+          \clearpage
+          \subsection{K8s objects: Service}
+          \paragraph{}Ogni Pod è assegnato ad un unico indirizzo IP che possiamo usare per comunicare con esso.\\
+          \textbf{Service} fornisce un endpoint stabile per direzionare il traffico al Pod desiderato anche se il Pod subisce aggiornamenti, scaling o failures.
+          \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.3]{Immagini/Service.png}
+          \end{figure}
+          \subsection{K8s objects: Ingress}
+          \paragraph{}Per esporre la nostra applicazione a traffico esterno verso il nostro cluster, definiamo un \textbf{Ingress} object.
+          \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.35]{Immagini/Ingress.png}
+          \end{figure}
+          \section{K8s Control plane}
+          \paragraph{}Ci sono due tipi di macchine in un cluster:
+          \begin{itemize}
+            \item \textbf{Master node}: macchina che contiene la maggior parte dei componenti del control plane
+            \item \textbf{Worker node}: macchina che esegue i workloads delle applicazioni0
+          \end{itemize}
+          \subsection{K8s Control plane: Master node}
+          \paragraph{}L'utente fornisce nuovi object specification all'\textbf{API server} del master node:
+          \begin{itemize}
+            \item Il server API convalida le richieste di aggiornamento e agisce come interfaccia unificata per richieste sullo stato corrente del cluster
+            \item Lo stato del cluster è archiviato in una key-value distribuita \textbf{etcd}
+          \end{itemize}
+          \paragraph{}Lo \textbf{scheduler} determina dove gli oggetti dovrebbero essere eseguiti. Lo scheduler:
+          \begin{itemize}
+            \item Richiede il server API i cui oggetti non sono stati assegnati ad una macchina
+            \item Determina a quali macchine quegli oggetti dovrebbero essere assegnati
+            \item Risponde all'API server di riflettere il compito
+          \end{itemize}
+          Il \textbf{controller-manager} monitora lo stato dei cluster attraverso i server API, se lo stato attuale differisce dallo stato desiderato, il \textbf{control manager} 
+          effettuerà dei cambiamenti attraverso il server API per guidare il cluster verso lo stato desiderato.
+          \subsection{K8s Control plane: Worker node}
+          \paragraph{}\textbf{Kubelet}:
+          \begin{itemize}
+            \item Agisce come agente del nodo che comunica con il server API per vedere quali container workloads sono stati assegnati al nodo
+            \item Responsabile di far eseguire i workload assegnati ai Pods
+            \item Quando un nodo entra la prima volta in un cluster, annuncia l'esistenza del nodo al server API in modo che lo scheduler possa assegnare il Pod a esso
+          \end{itemize}
+          \paragraph{}\textbf{Kube-proxy} abilita i container a comunicare tra loro attraversando vari nodi sul cluster
+          \section{Quando non usare K8s}
+          \begin{itemize}
+            \item Se puoi eseguire workload su una singola macchina
+            \item Se i calcoli sono leggeri
+            \item Se non necessiti alta disponibilità e puoi tollerare downtime
+            \item Se non prevedi molte modifiche al servizio 
+            \item Se hai un monolite e non prevedi di spezzarlo in microservizi
+          \end{itemize}
+          \section{K8s vs Docker Swarm}
+          \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.35]{Immagini/K8svsDS.png}
+          \end{figure}
 \end{document}
